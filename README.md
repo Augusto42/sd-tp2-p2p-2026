@@ -50,4 +50,6 @@ Vizinhos estáticos, um arquivo por execução, metadado local confiável, ambie
 
 ## Repositório
 
-https://github.com/Augusto42/sd-tp2-p2p-2026 (privado; o titular deve conceder acesso ao avaliador). Os logs completos estão no ZIP de entrega.
+https://github.com/Augusto42/sd-tp2-p2p-2026 (público; acesso livre pelo link). Os logs completos estão no ZIP de entrega.
+
+O repositório foi tornado público em 29/10/2026 após o envio inicial. As menções a repositório privado nos PDFs e no e-mail original descrevem o estado anterior; não é mais necessário solicitar acesso.
