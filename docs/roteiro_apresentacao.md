@@ -1,12 +1,12 @@
 # Roteiro de apresentação (8 a 10 minutos)
 
-## Slide 1: Um peer baixa e compartilha
+## Slide 1: Transferência de arquivos P2P
 
-- Transferência de arquivos P2P - TP2 / CEFET-MG
-- Python + asyncio + TCP
+- Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2
+- Professora: Michelle Hanne
 - Augusto Coelho Fagundes<br/>ADJAILSON FREIRE DE SÁ FILHO
 
-**Fala sugerida:** Abrir explicando que a função de cliente e servidor existe no mesmo processo. Material preparado com Codex, assistente de IA da OpenAI.
+**Fala sugerida:** Abrir explicando que a função de cliente e servidor existe no mesmo processo.
 
 ## Slide 2: A cadeia comprova o repasse
 

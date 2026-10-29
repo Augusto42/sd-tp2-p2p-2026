@@ -1,4 +1,4 @@
-"""Gera relatório (4 páginas) e rascunho visual (8 slides) com ReportLab."""
+"""Gera o relatório e a apresentação com ReportLab."""
 from pathlib import Path
 import json
 from reportlab.pdfgen import canvas
@@ -21,8 +21,8 @@ def table(data,widths=None):
  story.append(t);story.append(Spacer(1,12))
 def page():story.append(PageBreak())
 title('Transferência de arquivos P2P')
-p('<b>Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2</b><br/>Professora: Michelle Hanne.<br/><b>Integrantes: Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO.</b><br/>Implementação, testes e redação preparados com Codex, assistente de IA da OpenAI, a pedido de Augusto. Data: 29/10/2026.')
-p(f'<b>Código-fonte:</b> <link href="{repo}" color="blue">{repo}</link><br/>Repositório público, acessível pelo link. O ZIP contém uma cópia independente do código e das evidências.')
+p('<b>Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2</b><br/>Professora: Michelle Hanne.<br/><b>Integrantes: Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO.</b><br/>29/10/2026.')
+p(f'<b>Código-fonte:</b> <link href="{repo}" color="blue">{repo}</link>')
 title('1. Arquitetura e decisões')
 p('Cada peer é um processo Python com um servidor TCP e tarefas clientes no mesmo event loop asyncio. Ele atende solicitações enquanto baixa de seus vizinhos. A biblioteca padrão reduz dependências e permite concentrar o trabalho em protocolo, concorrência e integridade.')
 p('Os vizinhos são estáticos, configurados por IP e porta. Não foi usado tracker, pois é opcional. A matriz de testes usa A -> B -> C -> D para forçar o repasse por peers intermediários. Um teste adicional utiliza malha completa.')
@@ -36,7 +36,7 @@ p('Um pedido fica em voo por conexão, dispensando identificador de correlação
 p('Conexão tem timeout de 2 s; resposta, 5 s; servidor ocioso, 15 s. Falhas liberam reservas e tentam novamente após 100 ms; falta de blocos novos gera nova consulta após 20 ms. Estes valores privilegiam uma demonstração em rede local. Não há limite global de espera.')
 p('Hashes por bloco rejeitam dados corrompidos antes de publicá-los. O hash final confirma remontagem. O nome do metadado é informativo: a saída usa nome local fixo, evitando usar dados remotos como caminho de escrita.')
 title('3. Procedimento experimental')
-p('Executaram-se 24 combinações: 2/4 peers x 1.024/4.096 bytes x 10/20 KiB, 1/5/10/20 MiB. KB e MB do enunciado foram interpretados como unidades binárias. Cada caso usa conteúdo aleatório, processos independentes e sockets TCP reais em loopback; nenhum resultado é simulado.')
+p('Executaram-se 24 combinações: 2/4 peers x 1.024/4.096 bytes x 10/20 KiB, 1/5/10/20 MiB. KB e MB do enunciado foram interpretados como unidades binárias. Cada caso usa conteúdo aleatório, processos independentes e sockets TCP reais em loopback.')
 p('Cada transferência verifica tamanho, SHA-256 e origem dos blocos nos logs. Os testes preservam metadados, eventos JSONL, verificações e tabelas CSV/JSON; os binários temporários são descartados. A repetição gera novos dados. Cada configuração teve uma execução; não há intervalos de confiança.')
 page();title('4. Resultados da matriz completa')
 data=[['Arquivo','2 peers / 1 KiB','2 peers / 4 KiB','4 peers / 1 KiB','4 peers / 4 KiB']]
@@ -59,13 +59,13 @@ p('<b>Malha completa:</b> quatro peers, 1 MiB e blocos de 4 KiB. Conclusão corr
 p('<b>Testes unitários: 10/10 aprovados.</b> Cobrem último bloco parcial e montagem fora de ordem, corrupção, tamanho incorreto, arquivo vazio, metadado inválido, tamanho de bloco inválido, hash final divergente, frame fragmentado, frame truncado e limite de frame.')
 title('6. Limitações e conclusão')
 p('A solução atende à simetria, fragmentação, registro local de blocos, redistribuição durante o download e montagem verificada. Usa operações de disco síncronas curtas no event loop; a aplicação não garante durabilidade contra queda de energia. Não implementa autenticação/TLS, rarest-first, descoberta de peers, retomada persistente nem distribuição automática de metadados. Vizinhos são cooperativos e o metadado é confiável.')
-p('As 27 integrações e os 10 testes unitários passaram. Isso comprova os cenários executados, sem demonstrar comportamento em toda falha possível. Melhorias futuras: retomada com bitmap persistente, inventários incrementais, agendamento de blocos e ensaios repetidos em máquinas/redes distintas.')
+p('As 27 integrações e os 10 testes unitários passaram. Melhorias futuras: retomada com bitmap persistente, inventários incrementais, agendamento de blocos e ensaios repetidos em máquinas/redes distintas.')
 p('<b>Referências:</b> enunciado SD_TP2_2_2026.pdf, seções 1 a 3, pp. 1-2; código e evidências no repositório acima. Instruções reproduzíveis no README e especificação detalhada em docs/protocolo.md.')
 def footer(c,d):
  c.setFont('Helvetica',8);c.setFillColor(HexColor('#667780'));c.drawString(48,28,'TP2 | Sistemas Distribuídos | 29/10/2026');c.drawRightString(A4[0]-48,28,str(d.page))
-SimpleDocTemplate(str(ROOT/'docs/relatorio.pdf'),pagesize=A4,rightMargin=48,leftMargin=48,topMargin=42,bottomMargin=45).build(story,onFirstPage=footer,onLaterPages=footer)
+SimpleDocTemplate(str(ROOT/'docs/relatorio.pdf'),title='Transferência de arquivos P2P - Relatório',author='Augusto Coelho Fagundes; ADJAILSON FREIRE DE SÁ FILHO',pagesize=A4,rightMargin=48,leftMargin=48,topMargin=42,bottomMargin=45).build(story,onFirstPage=footer,onLaterPages=footer)
 slides=[
- ('Um peer baixa e compartilha', ['Transferência de arquivos P2P - TP2 / CEFET-MG','Python + asyncio + TCP','Augusto Coelho Fagundes<br/>ADJAILSON FREIRE DE SÁ FILHO'], 'Abrir explicando que a função de cliente e servidor existe no mesmo processo. Material preparado com Codex, assistente de IA da OpenAI.'),
+ ('Transferência de arquivos P2P', ['Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2','Professora: Michelle Hanne','Augusto Coelho Fagundes<br/>ADJAILSON FREIRE DE SÁ FILHO'], 'Abrir explicando que a função de cliente e servidor existe no mesmo processo.'),
  ('A cadeia comprova o repasse', ['A (semente)  >  B  >  C  >  D','B e C servem blocos antes de completar o arquivo.','Vizinhos estáticos; um processo por peer.'], 'Mostrar o desenho. D não conhece A; portanto a chegada dos dados exige redistribuição pelos intermediários.'),
  ('Do arquivo aos blocos verificados', ['Metadado: tamanho + hashes por bloco + SHA-256 final','Receber > verificar > gravar > anunciar no inventário','Ao completar: verificar o todo e publicar arquivo_final.bin'], 'Explicar bloco final menor, arquivo parcial em disco e dois conjuntos have/busy. Hash identifica corrupção; não autentica o remetente.'),
  ('TCP precisa de enquadramento', ['4 bytes de comprimento + corpo da mensagem','have / get: JSON | inventário: J | bloco: B | erro: E','Conexões persistentes, deadlines e novas tentativas'], 'TCP não preserva fronteiras de mensagens. readexactly reconstrói frames. Uma tarefa por vizinho permite receber e enviar simultaneamente.'),
@@ -73,7 +73,9 @@ slides=[
  ('Blocos maiores reduziram o tempo em 20 MiB', ['2 peers: 2,5323 s (1 KiB) > 0,9107 s (4 KiB)','4 peers: 4,6279 s (1 KiB) > 3,4303 s (4 KiB)','Medição inclui inicialização e logs; não representa WAN.'], 'Mais peers na cadeia também significam mais cópias entregues. Não concluir que quatro peers aceleram ou pioram universalmente P2P.'),
  ('As evidências vão além do arquivo final', ['216 envios durante download no caso com atraso','Seeder tardio: 7 tentativas, recuperação correta','Malha: múltiplas fontes | 10 testes unitários aprovados'], 'Abrir verificacao.json e um log received/sent. Mostrar complete=false. O teste de recuperação é de indisponibilidade inicial.'),
  ('Demonstração e próximos passos', ['Gerar metadado; iniciar A e B; comparar SHA-256','Limites: sem retomada persistente, TLS ou tracker','Código, testes, logs e relatório acompanham a entrega.'], 'Executar os comandos do README. Concluir explicando as escolhas e limites. Repositório público: Augusto42/sd-tp2-p2p-2026.')]
-c=canvas.Canvas(str(ROOT/'docs/rascunho_apresentacao.pdf'),pagesize=(960,540))
+c=canvas.Canvas(str(ROOT/'docs/apresentacao.pdf'),pagesize=(960,540))
+c.setTitle('Transferência de arquivos P2P - Apresentação')
+c.setAuthor('Augusto Coelho Fagundes; ADJAILSON FREIRE DE SÁ FILHO')
 for i,(t,lines,note) in enumerate(slides,1):
  c.setFillColor(HexColor('#f5f8f8'));c.rect(0,0,960,540,fill=1,stroke=0)
  c.setFillColor(HexColor('#147d87'));c.rect(48,458,65,6,fill=1,stroke=0)
@@ -83,7 +85,7 @@ for i,(t,lines,note) in enumerate(slides,1):
  for line in lines:
   para=Paragraph(line,ParagraphStyle('l',fontName='Helvetica',fontSize=23,leading=30,textColor=HexColor('#263f48')))
   w,h=para.wrap(850,100);para.drawOn(c,48,y-h);y-=h+28
- c.setFillColor(HexColor('#607780'));c.setFont('Helvetica',10);c.drawString(48,30,'RASCUNHO | TP2 - Sistemas Distribuídos | Codex / OpenAI');c.drawRightString(912,30,f'{i}/8');c.showPage()
+ c.setFillColor(HexColor('#607780'));c.setFont('Helvetica',10);c.drawString(48,30,'TP2 - Sistemas Distribuídos | CEFET-MG');c.drawRightString(912,30,f'{i}/8');c.showPage()
 c.save()
 with (ROOT/'docs/roteiro_apresentacao.md').open('w') as f:
  f.write('# Roteiro de apresentação (8 a 10 minutos)\n\n')

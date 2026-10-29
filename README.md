@@ -1,8 +1,12 @@
-# TP2 - Transferência de arquivos P2P
+# Transferência de arquivos P2P
 
-Implementação preparada por Codex (assistente de IA da OpenAI), a pedido de Augusto Coelho Fagundes.
+Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2
 
-**Integrantes:** Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO. Material para estudo, revisão e apresentação. Enunciado: Sistemas Distribuídos, CEFET-MG, professora Michelle Hanne, 2026/2.
+**Integrantes:** Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO.
+
+**Professora:** Michelle Hanne.
+
+**Código-fonte:** https://github.com/Augusto42/sd-tp2-p2p-2026
 
 ## Requisitos e execução
 
@@ -41,7 +45,7 @@ Os testes de integração geram novos dados aleatórios a cada execução; prese
 - `tests/`: testes unitários e cenários multiprocessos.
 - `resultados/`: evidência real da execução; `resumo.csv`/`resumo.json` consolidam 27 cenários.
 - `docs/relatorio.pdf`: relatório de até cinco páginas.
-- `docs/rascunho_apresentacao.pdf`: rascunho visual para uma apresentação de 8 a 10 minutos.
+- `docs/apresentacao.pdf`: apresentação do projeto.
 - `docs/roteiro_apresentacao.md`: fala sugerida e demonstração.
 - `docs/protocolo.md`: especificação de mensagens, decisões e limites.
 - `docs/gerar_documentos.py`: fonte dos PDFs, requer ReportLab.
@@ -49,7 +53,3 @@ Os testes de integração geram novos dados aleatórios a cada execução; prese
 ## Limites
 
 Vizinhos estáticos, um arquivo por execução, metadado local confiável, ambiente cooperativo. Não há tracker, descoberta, TLS, autenticação, retomada após reinício do processo nem controle de congestionamento no nível da aplicação. TCP cuida da ordenação e retransmissão de bytes; a aplicação verifica hashes e tenta novamente após falhas. O conjunto `busy` evita pedidos simultâneos do mesmo bloco, mas não implementa rarest-first nem justiça garantida entre fontes. O frame tem limite de 8 MiB; os inventários dos tamanhos do trabalho cabem nesse limite. Os dados no disco usam operações síncronas curtas dentro do loop assíncrono. Os testes locais não permitem inferir ganhos em WAN ou resultados estatísticos.
-
-## Repositório
-
-https://github.com/Augusto42/sd-tp2-p2p-2026 (público; acesso livre pelo link). Os logs completos estão no ZIP de entrega.
