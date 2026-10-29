@@ -1,0 +1,15 @@
+test_corruption_rejected (test_peer.Blocks.test_corruption_rejected) ... ok
+test_empty_file (test_peer.Blocks.test_empty_file) ... ok
+test_invalid_block_size (test_peer.Blocks.test_invalid_block_size) ... ok
+test_invalid_meta (test_peer.Blocks.test_invalid_meta) ... ok
+test_out_of_order_and_partial_last (test_peer.Blocks.test_out_of_order_and_partial_last) ... ok
+test_truncated_block_rejected (test_peer.Blocks.test_truncated_block_rejected) ... ok
+test_whole_hash_checked (test_peer.Blocks.test_whole_hash_checked) ... ok
+test_fragmented_frame (test_peer.Frames.test_fragmented_frame) ... ok
+test_oversized_frame (test_peer.Frames.test_oversized_frame) ... ok
+test_truncated_frame (test_peer.Frames.test_truncated_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.011s
+
+OK

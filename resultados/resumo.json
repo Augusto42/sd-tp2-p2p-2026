@@ -1,0 +1,575 @@
+[
+  {
+    "case": "n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.3279,
+    "aggregate_mib_s": 0.03,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        35273
+      ]
+    },
+    "sha256": "2fba96155aa003ebfca382d9dd0ac43faa63690713f9cd67d44f284af3aac026"
+  },
+  {
+    "case": "n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.5871,
+    "aggregate_mib_s": 0.05,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        51575
+      ],
+      "2": [
+        34005
+      ],
+      "3": [
+        57391
+      ]
+    },
+    "sha256": "cd22dbf46be8551122f6df729faec045ac6c7586667b802215faf7c72b69d09f"
+  },
+  {
+    "case": "n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.3377,
+    "aggregate_mib_s": 0.029,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        41469
+      ]
+    },
+    "sha256": "823f66b532f455f9d5345892f7f3c40733fa671234c0c3524a4094faaa0d6d13"
+  },
+  {
+    "case": "n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.5034,
+    "aggregate_mib_s": 0.058,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        36719
+      ],
+      "2": [
+        39209
+      ],
+      "3": [
+        33957
+      ]
+    },
+    "sha256": "e0601346badbaf02908a10b530b73c8852b48a89d74a1da73e7fa6c4ce135596"
+  },
+  {
+    "case": "n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.2655,
+    "aggregate_mib_s": 0.074,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        35883
+      ]
+    },
+    "sha256": "36c1749853a7aaf6750022c696475593286ca9739422a2d2ba4ae3cf971d4aa7"
+  },
+  {
+    "case": "n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.6328,
+    "aggregate_mib_s": 0.093,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        44431
+      ],
+      "2": [
+        50673
+      ],
+      "3": [
+        56013
+      ]
+    },
+    "sha256": "8765440afc47e96458926b37e34d90bdf6cf3de5fb221bd1d0d6a8b7c07113f6"
+  },
+  {
+    "case": "n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.3511,
+    "aggregate_mib_s": 0.056,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        55751
+      ]
+    },
+    "sha256": "72b1a195868ab9794ba916d273a320fc997e6a01489c22d37a36ea84c36163f8"
+  },
+  {
+    "case": "n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.5799,
+    "aggregate_mib_s": 0.101,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        49823
+      ],
+      "2": [
+        37031
+      ],
+      "3": [
+        45855
+      ]
+    },
+    "sha256": "d005d2955705a2dd564a5fb7c3f482cb7a666e376c7ebefaa330fdbfd2424811"
+  },
+  {
+    "case": "n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.5519,
+    "aggregate_mib_s": 1.812,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        47581
+      ]
+    },
+    "sha256": "6d12dd602e59abb734e4a277b8219ece07adc2d74244e3ff4779d272cd968f01"
+  },
+  {
+    "case": "n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.8456,
+    "aggregate_mib_s": 3.548,
+    "integrity": "PASS",
+    "early_served": 1644,
+    "retries": 2,
+    "sources": {
+      "1": [
+        32999
+      ],
+      "2": [
+        60539
+      ],
+      "3": [
+        39469
+      ]
+    },
+    "sha256": "a6e3122b9e9b04929726cc91dc5681519f7b7600b2506a133511c1231067b4ac"
+  },
+  {
+    "case": "n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.3902,
+    "aggregate_mib_s": 2.563,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        51663
+      ]
+    },
+    "sha256": "4e479c37a7b5be0b2e31a1d944ae1f93e24367718942a5a94a1c2e231d2ba9f2"
+  },
+  {
+    "case": "n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.6416,
+    "aggregate_mib_s": 4.676,
+    "integrity": "PASS",
+    "early_served": 443,
+    "retries": 2,
+    "sources": {
+      "1": [
+        51823
+      ],
+      "2": [
+        53507
+      ],
+      "3": [
+        33823
+      ]
+    },
+    "sha256": "1653d0e6d5c4b7a10d1b675d10c15b966b1eaa3b6607f776e38601d4b3df3e78"
+  },
+  {
+    "case": "n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 1.0568,
+    "aggregate_mib_s": 4.731,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        55863
+      ]
+    },
+    "sha256": "897c12dbadcb183bc4877229df75cde44d267ab97bfc3cf5b1d0120449df56b9"
+  },
+  {
+    "case": "n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 2.008,
+    "aggregate_mib_s": 7.47,
+    "integrity": "PASS",
+    "early_served": 7599,
+    "retries": 2,
+    "sources": {
+      "1": [
+        34197
+      ],
+      "2": [
+        39609
+      ],
+      "3": [
+        54333
+      ]
+    },
+    "sha256": "7f4c2794ad037c3eab76cfde9846bd9b2c64e7dae3f343dd03631e15b8aa3388"
+  },
+  {
+    "case": "n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.5065,
+    "aggregate_mib_s": 9.871,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        41175
+      ]
+    },
+    "sha256": "914db3c827e4a48554d19c6525ca7f6e987f2b0b9652f301a410fc49166d9098"
+  },
+  {
+    "case": "n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 0.7839,
+    "aggregate_mib_s": 19.135,
+    "integrity": "PASS",
+    "early_served": 2161,
+    "retries": 2,
+    "sources": {
+      "1": [
+        42969
+      ],
+      "2": [
+        35607
+      ],
+      "3": [
+        34761
+      ]
+    },
+    "sha256": "0c2c999142bca53134cbd4f69a1e54344a486eb1614ac9f9f7689a81b4e802f2"
+  },
+  {
+    "case": "n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 1.3361,
+    "aggregate_mib_s": 7.485,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        50373
+      ]
+    },
+    "sha256": "ae75eae52f34d48c7abaf58440f6f0fd431bfe63c6c6957b05bcd04049c93894"
+  },
+  {
+    "case": "n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 2.566,
+    "aggregate_mib_s": 11.691,
+    "integrity": "PASS",
+    "early_served": 18752,
+    "retries": 2,
+    "sources": {
+      "1": [
+        49815
+      ],
+      "2": [
+        54443
+      ],
+      "3": [
+        49217
+      ]
+    },
+    "sha256": "52aa61fd522ee5f79dbe6c78d1ec1d525c7a9915d705c6f4f0c1b62879e70a5c"
+  },
+  {
+    "case": "n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.6278,
+    "aggregate_mib_s": 15.929,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        37399
+      ]
+    },
+    "sha256": "8df44a917694da4ca421718e786b33e9ce38408f4480526cc7022ce77468ad8d"
+  },
+  {
+    "case": "n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 1.0588,
+    "aggregate_mib_s": 28.335,
+    "integrity": "PASS",
+    "early_served": 4576,
+    "retries": 2,
+    "sources": {
+      "1": [
+        54027
+      ],
+      "2": [
+        57191
+      ],
+      "3": [
+        55263
+      ]
+    },
+    "sha256": "96679be953b7d272d435511c2ab3de785398a2cc3add714684c50a212bba91f9"
+  },
+  {
+    "case": "n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 2.5323,
+    "aggregate_mib_s": 7.898,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        41173
+      ]
+    },
+    "sha256": "09753dbdece792e73e6344b50463b1b20d4db1be3800a5a2b92474e0df60cc9e"
+  },
+  {
+    "case": "n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 4.6279,
+    "aggregate_mib_s": 12.965,
+    "integrity": "PASS",
+    "early_served": 38990,
+    "retries": 3,
+    "sources": {
+      "1": [
+        37679
+      ],
+      "2": [
+        45877
+      ],
+      "3": [
+        56511
+      ]
+    },
+    "sha256": "19384ae7934d13edc5c4c04d74b8785981bca104e75b42c84decc0accc7d2949"
+  },
+  {
+    "case": "n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 0.9107,
+    "aggregate_mib_s": 21.96,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        54527
+      ]
+    },
+    "sha256": "fb2622fb1f98817af61e7ac15f5b6d716b30d57a874c25a7dd6bb050639cbf4e"
+  },
+  {
+    "case": "n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 3.4303,
+    "aggregate_mib_s": 17.491,
+    "integrity": "PASS",
+    "early_served": 8102,
+    "retries": 4,
+    "sources": {
+      "1": [
+        59537
+      ],
+      "2": [
+        40429
+      ],
+      "3": [
+        58049
+      ]
+    },
+    "sha256": "8f9e797513df38674aaa7b4f9a4d592a3756e96f03aff66c0c16c8dc125c6fd6"
+  },
+  {
+    "case": "compartilhamento_parcial",
+    "size_bytes": 131123,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "chain",
+    "seconds": 1.4118,
+    "aggregate_mib_s": 0.266,
+    "integrity": "PASS",
+    "early_served": 216,
+    "retries": 6,
+    "sources": {
+      "1": [
+        50825
+      ],
+      "2": [
+        42105
+      ],
+      "3": [
+        57119
+      ]
+    },
+    "sha256": "e29c17e5d82a1217f89938ade316bbd1c66ed9775762a8e04a743b0f8f1c915a"
+  },
+  {
+    "case": "seeder_tardio",
+    "size_bytes": 65539,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "chain",
+    "seconds": 1.0287,
+    "aggregate_mib_s": 0.061,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 7,
+    "sources": {
+      "1": [
+        47911
+      ]
+    },
+    "sha256": "baceae2f9ff30822e82557fe16fc5e88451583aa7ba558ab3652d28cb1c993c3"
+  },
+  {
+    "case": "malha_completa",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.1444,
+    "aggregate_mib_s": 2.622,
+    "integrity": "PASS",
+    "early_served": 30,
+    "retries": 5,
+    "sources": {
+      "1": [
+        38191,
+        40355
+      ],
+      "2": [
+        38191,
+        40355,
+        53781
+      ],
+      "3": [
+        40355
+      ]
+    },
+    "sha256": "87826c05f0a6603c08a0337303129b1afa4df119aa1049fab092afd2fd6175fa"
+  }
+]

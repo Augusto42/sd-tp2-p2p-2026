@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+arquivo.json
+origem.bin
+dados_*/
+*.jsonl
+resultados/*/

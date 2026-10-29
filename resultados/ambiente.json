@@ -1,0 +1,9 @@
+{
+  "python": "3.13.5 (main, Jun 13 2026, 14:18:01) [GCC 14.2.0]",
+  "platform": "Linux-6.12.94+deb13-amd64-x86_64-with-glibc2.41",
+  "cpu_count": 4,
+  "date": "2026-10-29",
+  "network": "loopback TCP, processos independentes",
+  "repetitions": 1,
+  "units": "KB/MB do enunciado interpretados como KiB/MiB"
+}
