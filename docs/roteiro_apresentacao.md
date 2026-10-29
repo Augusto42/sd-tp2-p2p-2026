@@ -4,7 +4,7 @@
 
 - Transferência de arquivos P2P - TP2 / CEFET-MG
 - Python + asyncio + TCP
-- Rascunho para apresentação de 8 a 10 minutos
+- Augusto Coelho Fagundes<br/>ADJAILSON FREIRE DE SÁ FILHO
 
 **Fala sugerida:** Abrir explicando que a função de cliente e servidor existe no mesmo processo. Material preparado com Codex, assistente de IA da OpenAI.
 
@@ -62,7 +62,7 @@
 - Limites: sem retomada persistente, TLS ou tracker
 - Código, testes, logs e relatório acompanham a entrega.
 
-**Fala sugerida:** Executar os comandos do README. Concluir explicando as escolhas e limites. Repositório privado: Augusto42/sd-tp2-p2p-2026.
+**Fala sugerida:** Executar os comandos do README. Concluir explicando as escolhas e limites. Repositório público: Augusto42/sd-tp2-p2p-2026.
 
 ## Perguntas prováveis
 
