@@ -4,546 +4,601 @@
     "size_bytes": 10240,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.3279,
-    "aggregate_mib_s": 0.03,
+    "topology": "mesh",
+    "seconds": 0.2859,
+    "aggregate_mib_s": 0.034,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 0,
     "sources": {
       "1": [
-        35273
+        32981
       ]
     },
-    "sha256": "2fba96155aa003ebfca382d9dd0ac43faa63690713f9cd67d44f284af3aac026"
+    "sha256": "7b488c7752bba215f57d310d24062fff448bc5164a15782bb5be9121789c64f2"
   },
   {
     "case": "n4_b1024_s10240",
     "size_bytes": 10240,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.5871,
-    "aggregate_mib_s": 0.05,
+    "topology": "mesh",
+    "seconds": 0.6833,
+    "aggregate_mib_s": 0.043,
     "integrity": "PASS",
     "early_served": 0,
-    "retries": 2,
+    "retries": 7,
     "sources": {
       "1": [
-        51575
+        49877,
+        54911
       ],
       "2": [
-        34005
+        49877,
+        54911
       ],
       "3": [
-        57391
+        54911
       ]
     },
-    "sha256": "cd22dbf46be8551122f6df729faec045ac6c7586667b802215faf7c72b69d09f"
+    "sha256": "ec3182fc0eb9f055b810311b518fb54adc1a42924a364d0c788d4cea2137049d"
   },
   {
     "case": "n2_b4096_s10240",
     "size_bytes": 10240,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.3377,
-    "aggregate_mib_s": 0.029,
+    "topology": "mesh",
+    "seconds": 0.2866,
+    "aggregate_mib_s": 0.034,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 0,
     "sources": {
       "1": [
-        41469
+        37595
       ]
     },
-    "sha256": "823f66b532f455f9d5345892f7f3c40733fa671234c0c3524a4094faaa0d6d13"
+    "sha256": "f1bb03204bf002f530b0a7a90e59ba71e07fabd5b705d1a2a3660ae57e1bc5c5"
   },
   {
     "case": "n4_b4096_s10240",
     "size_bytes": 10240,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.5034,
-    "aggregate_mib_s": 0.058,
+    "topology": "mesh",
+    "seconds": 0.5333,
+    "aggregate_mib_s": 0.055,
     "integrity": "PASS",
     "early_served": 0,
-    "retries": 1,
+    "retries": 5,
     "sources": {
       "1": [
-        36719
+        48195
       ],
       "2": [
-        39209
+        48195,
+        50911
       ],
       "3": [
-        33957
+        55439
       ]
     },
-    "sha256": "e0601346badbaf02908a10b530b73c8852b48a89d74a1da73e7fa6c4ce135596"
+    "sha256": "02622cacc737c8fdd9bfe8d3b45fd871f7174b47cf52b106db46f2a34eb74fba"
   },
   {
     "case": "n2_b1024_s20480",
     "size_bytes": 20480,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.2655,
-    "aggregate_mib_s": 0.074,
+    "topology": "mesh",
+    "seconds": 0.3864,
+    "aggregate_mib_s": 0.051,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 0,
     "sources": {
       "1": [
-        35883
+        52885
       ]
     },
-    "sha256": "36c1749853a7aaf6750022c696475593286ca9739422a2d2ba4ae3cf971d4aa7"
+    "sha256": "1198ea0b97342cd559f7ad4e1a1e215bd386629e14e3f704362cf598d08eab4e"
   },
   {
     "case": "n4_b1024_s20480",
     "size_bytes": 20480,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.6328,
-    "aggregate_mib_s": 0.093,
+    "topology": "mesh",
+    "seconds": 0.6016,
+    "aggregate_mib_s": 0.097,
     "integrity": "PASS",
-    "early_served": 0,
-    "retries": 3,
+    "early_served": 6,
+    "retries": 6,
     "sources": {
       "1": [
-        44431
+        52777
       ],
       "2": [
-        50673
+        41923,
+        54453
       ],
       "3": [
-        56013
+        52777
       ]
     },
-    "sha256": "8765440afc47e96458926b37e34d90bdf6cf3de5fb221bd1d0d6a8b7c07113f6"
+    "sha256": "aca96b4756a76d772ef1b30974207f3e5911ebc7c58697e7b13b63d316b9b4a6"
   },
   {
     "case": "n2_b4096_s20480",
     "size_bytes": 20480,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.3511,
-    "aggregate_mib_s": 0.056,
+    "topology": "mesh",
+    "seconds": 0.2889,
+    "aggregate_mib_s": 0.068,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 0,
     "sources": {
       "1": [
-        55751
+        46399
       ]
     },
-    "sha256": "72b1a195868ab9794ba916d273a320fc997e6a01489c22d37a36ea84c36163f8"
+    "sha256": "e6b4e7f3cd2a5fb0eb0fd0e9a2ceed9cd53f798f1e023f24faf56b406e56726d"
   },
   {
     "case": "n4_b4096_s20480",
     "size_bytes": 20480,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.5799,
-    "aggregate_mib_s": 0.101,
+    "topology": "mesh",
+    "seconds": 0.604,
+    "aggregate_mib_s": 0.097,
     "integrity": "PASS",
     "early_served": 0,
-    "retries": 2,
+    "retries": 5,
     "sources": {
       "1": [
-        49823
+        50383
       ],
       "2": [
-        37031
+        50383,
+        51299
       ],
       "3": [
-        45855
+        44661,
+        50383,
+        51299
       ]
     },
-    "sha256": "d005d2955705a2dd564a5fb7c3f482cb7a666e376c7ebefaa330fdbfd2424811"
+    "sha256": "966e336b02a1a42ce84bb330f2d7f03d90df716f0ee214aa9be3ca78fa52e09d"
   },
   {
     "case": "n2_b1024_s1048576",
     "size_bytes": 1048576,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.5519,
-    "aggregate_mib_s": 1.812,
+    "topology": "mesh",
+    "seconds": 0.653,
+    "aggregate_mib_s": 1.531,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        47581
+        43899
       ]
     },
-    "sha256": "6d12dd602e59abb734e4a277b8219ece07adc2d74244e3ff4779d272cd968f01"
+    "sha256": "e9ef90dcac7785e143a6cc594742244191209f8986562f0fcb58d99c482088b0"
   },
   {
     "case": "n4_b1024_s1048576",
     "size_bytes": 1048576,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.8456,
-    "aggregate_mib_s": 3.548,
+    "topology": "mesh",
+    "seconds": 0.8014,
+    "aggregate_mib_s": 3.743,
     "integrity": "PASS",
-    "early_served": 1644,
-    "retries": 2,
+    "early_served": 594,
+    "retries": 5,
     "sources": {
       "1": [
-        32999
+        39971,
+        49601,
+        58271
       ],
       "2": [
-        60539
+        39971,
+        57807,
+        58271
       ],
       "3": [
-        39469
+        39971,
+        49601,
+        57807
       ]
     },
-    "sha256": "a6e3122b9e9b04929726cc91dc5681519f7b7600b2506a133511c1231067b4ac"
+    "sha256": "be58ac9db7020450497195cbef0678726f4741c2427c5d6c5bcdd94b1b43de4c"
   },
   {
     "case": "n2_b4096_s1048576",
     "size_bytes": 1048576,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.3902,
-    "aggregate_mib_s": 2.563,
+    "topology": "mesh",
+    "seconds": 0.512,
+    "aggregate_mib_s": 1.953,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        51663
+        33925
       ]
     },
-    "sha256": "4e479c37a7b5be0b2e31a1d944ae1f93e24367718942a5a94a1c2e231d2ba9f2"
+    "sha256": "2ae1afba1e041332cca89b4d079e6994dae461a560ea855364c5e57a2e59c9df"
   },
   {
     "case": "n4_b4096_s1048576",
     "size_bytes": 1048576,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.6416,
-    "aggregate_mib_s": 4.676,
+    "topology": "mesh",
+    "seconds": 0.6138,
+    "aggregate_mib_s": 4.888,
     "integrity": "PASS",
-    "early_served": 443,
-    "retries": 2,
+    "early_served": 30,
+    "retries": 7,
     "sources": {
       "1": [
-        51823
+        36957,
+        58799
       ],
       "2": [
-        53507
+        36957,
+        42959
       ],
       "3": [
-        33823
+        36957,
+        42959,
+        58799
       ]
     },
-    "sha256": "1653d0e6d5c4b7a10d1b675d10c15b966b1eaa3b6607f776e38601d4b3df3e78"
+    "sha256": "9deeb5af97c0af1c64e4e2ada874a73755fe700286b99f567f7e82d5b278a883"
   },
   {
     "case": "n2_b1024_s5242880",
     "size_bytes": 5242880,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 1.0568,
-    "aggregate_mib_s": 4.731,
+    "topology": "mesh",
+    "seconds": 1.1169,
+    "aggregate_mib_s": 4.477,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        55863
+        45083
       ]
     },
-    "sha256": "897c12dbadcb183bc4877229df75cde44d267ab97bfc3cf5b1d0120449df56b9"
+    "sha256": "2968ec86203c29ab97729ba14e7c2104a87304fcf34357830924477916ebe865"
   },
   {
     "case": "n4_b1024_s5242880",
     "size_bytes": 5242880,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 2.008,
-    "aggregate_mib_s": 7.47,
+    "topology": "mesh",
+    "seconds": 2.1482,
+    "aggregate_mib_s": 6.983,
     "integrity": "PASS",
-    "early_served": 7599,
-    "retries": 2,
+    "early_served": 2119,
+    "retries": 3,
     "sources": {
       "1": [
-        34197
+        43577,
+        53725,
+        56637
       ],
       "2": [
-        39609
+        41399,
+        53725,
+        56637
       ],
       "3": [
-        54333
+        41399,
+        43577,
+        53725
       ]
     },
-    "sha256": "7f4c2794ad037c3eab76cfde9846bd9b2c64e7dae3f343dd03631e15b8aa3388"
+    "sha256": "477a9b5b3d28df663ec50688b3b1647a3a5ef7f33ab6aa95407f6077d2568bc3"
   },
   {
     "case": "n2_b4096_s5242880",
     "size_bytes": 5242880,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.5065,
-    "aggregate_mib_s": 9.871,
+    "topology": "mesh",
+    "seconds": 0.7149,
+    "aggregate_mib_s": 6.994,
     "integrity": "PASS",
     "early_served": 0,
-    "retries": 1,
+    "retries": 0,
     "sources": {
       "1": [
-        41175
+        45863
       ]
     },
-    "sha256": "914db3c827e4a48554d19c6525ca7f6e987f2b0b9652f301a410fc49166d9098"
+    "sha256": "bb23e4c3cd3277788dfaf4ac98ab09fb78157cd1949f96cd2a5fc40b7f6cc96d"
   },
   {
     "case": "n4_b4096_s5242880",
     "size_bytes": 5242880,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 0.7839,
-    "aggregate_mib_s": 19.135,
+    "topology": "mesh",
+    "seconds": 1.5801,
+    "aggregate_mib_s": 9.493,
     "integrity": "PASS",
-    "early_served": 2161,
-    "retries": 2,
+    "early_served": 1111,
+    "retries": 13,
     "sources": {
       "1": [
-        42969
+        44409,
+        45281,
+        53649
       ],
       "2": [
-        35607
+        35397,
+        44409
       ],
       "3": [
-        34761
+        35397,
+        44409,
+        53649
       ]
     },
-    "sha256": "0c2c999142bca53134cbd4f69a1e54344a486eb1614ac9f9f7689a81b4e802f2"
+    "sha256": "8bcfba0b1a32c7e401d5a6f3f25501be7f2f348adc687c2a614afb71e00c0966"
   },
   {
     "case": "n2_b1024_s10485760",
     "size_bytes": 10485760,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 1.3361,
-    "aggregate_mib_s": 7.485,
+    "topology": "mesh",
+    "seconds": 1.8231,
+    "aggregate_mib_s": 5.485,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        50373
+        60109
       ]
     },
-    "sha256": "ae75eae52f34d48c7abaf58440f6f0fd431bfe63c6c6957b05bcd04049c93894"
+    "sha256": "f01950a7c9ef5f04e670ff0d1029b75434e4da89730ec6259aab8676bc498386"
   },
   {
     "case": "n4_b1024_s10485760",
     "size_bytes": 10485760,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 2.566,
-    "aggregate_mib_s": 11.691,
+    "topology": "mesh",
+    "seconds": 6.9813,
+    "aggregate_mib_s": 4.297,
     "integrity": "PASS",
-    "early_served": 18752,
-    "retries": 2,
+    "early_served": 4559,
+    "retries": 12,
     "sources": {
       "1": [
-        49815
+        33163,
+        35561,
+        49675
       ],
       "2": [
-        54443
+        33013,
+        35561,
+        49675
       ],
       "3": [
-        49217
+        33013,
+        33163,
+        35561
       ]
     },
-    "sha256": "52aa61fd522ee5f79dbe6c78d1ec1d525c7a9915d705c6f4f0c1b62879e70a5c"
+    "sha256": "a658d557cce8a55cd2614e1ece305abf4a74f6800e707b0a3e2ed08711c89fac"
   },
   {
     "case": "n2_b4096_s10485760",
     "size_bytes": 10485760,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.6278,
-    "aggregate_mib_s": 15.929,
+    "topology": "mesh",
+    "seconds": 0.868,
+    "aggregate_mib_s": 11.521,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        37399
+        49437
       ]
     },
-    "sha256": "8df44a917694da4ca421718e786b33e9ce38408f4480526cc7022ce77468ad8d"
+    "sha256": "8d734af414c38e153808b5bbfa0e006b9220c67be3b3cb3cdf318f0eafb9f97e"
   },
   {
     "case": "n4_b4096_s10485760",
     "size_bytes": 10485760,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 1.0588,
-    "aggregate_mib_s": 28.335,
+    "topology": "mesh",
+    "seconds": 1.2639,
+    "aggregate_mib_s": 23.736,
     "integrity": "PASS",
-    "early_served": 4576,
-    "retries": 2,
+    "early_served": 1130,
+    "retries": 5,
     "sources": {
       "1": [
-        54027
+        38131,
+        43025,
+        46805
       ],
       "2": [
-        57191
+        38131,
+        43025,
+        44541
       ],
       "3": [
-        55263
+        43025,
+        44541,
+        46805
       ]
     },
-    "sha256": "96679be953b7d272d435511c2ab3de785398a2cc3add714684c50a212bba91f9"
+    "sha256": "96f8f1e705dccdb63149000db7a4a1a1d6ae52444ace1406eb01363d086a4706"
   },
   {
     "case": "n2_b1024_s20971520",
     "size_bytes": 20971520,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 2.5323,
-    "aggregate_mib_s": 7.898,
+    "topology": "mesh",
+    "seconds": 3.1995,
+    "aggregate_mib_s": 6.251,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 2,
     "sources": {
       "1": [
-        41173
+        59435
       ]
     },
-    "sha256": "09753dbdece792e73e6344b50463b1b20d4db1be3800a5a2b92474e0df60cc9e"
+    "sha256": "f3212ad4254ec5742e7e8024daec8846a5890b76c5ffca0148e25d7d3e705262"
   },
   {
     "case": "n4_b1024_s20971520",
     "size_bytes": 20971520,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 4.6279,
-    "aggregate_mib_s": 12.965,
+    "topology": "mesh",
+    "seconds": 10.2469,
+    "aggregate_mib_s": 5.855,
     "integrity": "PASS",
-    "early_served": 38990,
-    "retries": 3,
+    "early_served": 8663,
+    "retries": 6,
     "sources": {
       "1": [
-        37679
+        33523,
+        45215,
+        47585
       ],
       "2": [
-        45877
+        42181,
+        45215,
+        47585
       ],
       "3": [
-        56511
+        33523,
+        42181,
+        45215
       ]
     },
-    "sha256": "19384ae7934d13edc5c4c04d74b8785981bca104e75b42c84decc0accc7d2949"
+    "sha256": "479ed4540eac741c00443926731a91567242d0920165a28f9509322410d7ddaa"
   },
   {
     "case": "n2_b4096_s20971520",
     "size_bytes": 20971520,
     "block_bytes": 4096,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 0.9107,
-    "aggregate_mib_s": 21.96,
+    "topology": "mesh",
+    "seconds": 1.5319,
+    "aggregate_mib_s": 13.055,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 1,
     "sources": {
       "1": [
-        54527
+        56349
       ]
     },
-    "sha256": "fb2622fb1f98817af61e7ac15f5b6d716b30d57a874c25a7dd6bb050639cbf4e"
+    "sha256": "8e27bab20c8f627f4ad8eefe4e8e4a61fb36084319530766dc764b1bb0fb66e3"
   },
   {
     "case": "n4_b4096_s20971520",
     "size_bytes": 20971520,
     "block_bytes": 4096,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 3.4303,
-    "aggregate_mib_s": 17.491,
+    "topology": "mesh",
+    "seconds": 5.0194,
+    "aggregate_mib_s": 11.954,
     "integrity": "PASS",
-    "early_served": 8102,
-    "retries": 4,
+    "early_served": 2433,
+    "retries": 15,
     "sources": {
       "1": [
-        59537
+        45371,
+        46467,
+        53995
       ],
       "2": [
-        40429
+        40457,
+        45371,
+        53995
       ],
       "3": [
-        58049
+        40457,
+        46467,
+        53995
       ]
     },
-    "sha256": "8f9e797513df38674aaa7b4f9a4d592a3756e96f03aff66c0c16c8dc125c6fd6"
+    "sha256": "f2776393b57da182572d06f829f7fe90f9c3fd7adc7d2156eb8e8c8691bd9a52"
   },
   {
     "case": "compartilhamento_parcial",
     "size_bytes": 131123,
     "block_bytes": 1024,
     "peers": 4,
-    "topology": "chain",
-    "seconds": 1.4118,
-    "aggregate_mib_s": 0.266,
+    "topology": "mesh",
+    "seconds": 0.7941,
+    "aggregate_mib_s": 0.472,
     "integrity": "PASS",
-    "early_served": 216,
+    "early_served": 43,
     "retries": 6,
     "sources": {
       "1": [
-        50825
+        34587
       ],
       "2": [
-        42105
+        34587,
+        35901,
+        38257
       ],
       "3": [
-        57119
+        34587,
+        35901
       ]
     },
-    "sha256": "e29c17e5d82a1217f89938ade316bbd1c66ed9775762a8e04a743b0f8f1c915a"
+    "sha256": "bb85325ba95adbd002d9d11875f29460632d5300b16034eed3a7f42078f7e7f8"
   },
   {
     "case": "seeder_tardio",
     "size_bytes": 65539,
     "block_bytes": 1024,
     "peers": 2,
-    "topology": "chain",
-    "seconds": 1.0287,
-    "aggregate_mib_s": 0.061,
+    "topology": "mesh",
+    "seconds": 1.109,
+    "aggregate_mib_s": 0.056,
     "integrity": "PASS",
     "early_served": 0,
     "retries": 7,
     "sources": {
       "1": [
-        47911
+        58289
       ]
     },
-    "sha256": "baceae2f9ff30822e82557fe16fc5e88451583aa7ba558ab3652d28cb1c993c3"
+    "sha256": "be5813abe08910fdd2e3b8cd14a0c241d19f80ba0bf041243429442b2aba1e73"
   },
   {
     "case": "malha_completa",
@@ -551,25 +606,105 @@
     "block_bytes": 4096,
     "peers": 4,
     "topology": "mesh",
-    "seconds": 1.1444,
-    "aggregate_mib_s": 2.622,
+    "seconds": 0.9637,
+    "aggregate_mib_s": 3.113,
     "integrity": "PASS",
-    "early_served": 30,
-    "retries": 5,
+    "early_served": 98,
+    "retries": 13,
     "sources": {
       "1": [
-        38191,
-        40355
+        37689,
+        51965,
+        58601
       ],
       "2": [
-        38191,
-        40355,
-        53781
+        37689,
+        48335,
+        58601
       ],
       "3": [
-        40355
+        37689,
+        48335,
+        51965
       ]
     },
-    "sha256": "87826c05f0a6603c08a0337303129b1afa4df119aa1049fab092afd2fd6175fa"
+    "sha256": "1528226f26062c7c4a6432d444912ccf0355bd68f8e382161e87eb6f4face5e6"
+  },
+  {
+    "case": "queda_temporaria",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.9479,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 39,
+    "retries": 36,
+    "sources": {
+      "1": [
+        43069,
+        56349
+      ],
+      "2": [
+        43069,
+        55295
+      ],
+      "3": [
+        43069,
+        55295,
+        56349
+      ]
+    },
+    "sha256": "978bbe27528e39a9f1229f2517803d6a11ee79e318ff1667be6743e6cfab4d15",
+    "fault": "temporaria",
+    "verified_peers": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "blocks_before_failure": {
+      "1": 17,
+      "2": 21,
+      "3": 17
+    },
+    "recovery": "reconexao apos retorno da unica fonte"
+  },
+  {
+    "case": "queda_permanente",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.5293,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 3,
+    "retries": 39,
+    "sources": {
+      "2": [
+        33029,
+        47003,
+        48017
+      ],
+      "3": [
+        35219,
+        47003,
+        48017
+      ]
+    },
+    "sha256": "40dc129ce9a430a867a386313f0e77fa58dc3075f4a842fd8899659234c0dd69",
+    "fault": "permanente",
+    "verified_peers": [
+      1,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 43,
+      "3": 45
+    },
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
   }
 ]

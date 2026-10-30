@@ -53,4 +53,22 @@ class Frames(unittest.IsolatedAsyncioTestCase):
     async def test_oversized_frame(self):
         r=asyncio.StreamReader(); r.feed_data(struct.pack('!I',MAX_FRAME+1))
         with self.assertRaises(ValueError): await receive(r)
+
+class Neighbors(unittest.IsolatedAsyncioTestCase):
+    async def test_completed_leecher_still_contacts_neighbor(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder); source=root/'source'; source.write_bytes(b'x')
+            peer=Peer(manifest(source,1024),root/'out','127.0.0.1',0,[],root/'log')
+            accepted=asyncio.Event()
+            async def handler(reader,writer):
+                accepted.set(); writer.close(); await writer.wait_closed()
+            server=await asyncio.start_server(handler,'127.0.0.1',0)
+            try:
+                peer.put(0,b'x'); peer.finish()
+                await asyncio.wait_for(peer.fetch('127.0.0.1',server.sockets[0].getsockname()[1]),2)
+                await asyncio.wait_for(accepted.wait(),2)
+                self.assertTrue(any(json.loads(line)['event']=='connected' for line in (root/'log').read_text().splitlines()))
+            finally:
+                server.close(); await server.wait_closed(); peer.file.close(); peer.logfile.close()
+
 if __name__ == '__main__': unittest.main(verbosity=2)

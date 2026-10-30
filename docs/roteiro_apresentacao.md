@@ -1,73 +1,47 @@
-# Roteiro de apresentação (8 a 10 minutos)
+# Roteiro de apresentação
 
-## Slide 1: Transferência de arquivos P2P
+## Slide 1
 
-- Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2
-- Professora: Michelle Hanne
-- Augusto Coelho Fagundes<br/>ADJAILSON FREIRE DE SÁ FILHO
+Apresentar o objetivo: cada processo recebe e envia blocos do mesmo arquivo. A ilustração representa o conceito de rede P2P. Fonte técnica: enunciado SD_TP2_2_2026.pdf, seções 1 e 2.
 
-**Fala sugerida:** Abrir explicando que a função de cliente e servidor existe no mesmo processo.
+## Slide 2
 
-## Slide 2: A cadeia comprova o repasse
+Cada peer configura os outros três como vizinhos. Cada leecher inicia uma tarefa cliente por vizinho e continua tentando o primeiro contato mesmo se concluir o arquivo rapidamente. A semente completa aceita conexões sem precisar baixar. O servidor serve blocos já verificados enquanto o cliente baixa.
 
-- A (semente)  >  B  >  C  >  D
-- B e C servem blocos antes de completar o arquivo.
-- Vizinhos estáticos; um processo por peer.
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** Mostrar o desenho. D não conhece A; portanto a chegada dos dados exige redistribuição pelos intermediários.
+## Slide 3
 
-## Slide 3: Do arquivo aos blocos verificados
+O metadado contém tamanho do arquivo, tamanho de bloco, hashes individuais e hash completo. O último bloco pode ser menor. A escrita usa offset no arquivo parcial. have é atualizado somente após a validação e escrita. busy evita solicitações duplicadas. Fonte: src/peer.py, put e finish.
 
-- Metadado: tamanho + hashes por bloco + SHA-256 final
-- Receber > verificar > gravar > anunciar no inventário
-- Ao completar: verificar o todo e publicar arquivo_final.bin
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** Explicar bloco final menor, arquivo parcial em disco e dois conjuntos have/busy. Hash identifica corrupção; não autentica o remetente.
+## Slide 4
 
-## Slide 4: TCP precisa de enquadramento
+Cada frame começa com quatro bytes big-endian contendo o tamanho do corpo. readexactly reconstrói mensagens mesmo quando TCP as divide. Um pedido por conexão fica em voo. Timeout de conexão: 2 s. Resposta: 5 s. Nova tentativa: 100 ms. Fonte: docs/protocolo.md e src/peer.py.
 
-- 4 bytes de comprimento + corpo da mensagem
-- have / get: JSON | inventário: J | bloco: B | erro: E
-- Conexões persistentes, deadlines e novas tentativas
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** TCP não preserva fronteiras de mensagens. readexactly reconstrói frames. Uma tarefa por vizinho permite receber e enviar simultaneamente.
+## Slide 5
 
-## Slide 5: A matriz cobriu 24 combinações
+24 combinações: 2/4 peers, blocos de 1.024/4.096 bytes e arquivos de 10/20 KiB, 1/5/10/20 MiB. Todos os ensaios usam malha completa. Os logs verificam que cada leecher se conectou a todos os vizinhos, e que índices, fontes, tamanho e SHA-256 estão corretos. Processos independentes em TCP loopback; uma execução por configuração.
 
-- 2 e 4 processos; blocos de 1 e 4 KiB
-- 10/20 KiB e 1/5/10/20 MiB
-- 24/24: SHA-256, tamanho e fontes corretos
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** Todos os testes usaram processos reais e loopback. Explicar unidades binárias. Cada caso foi executado uma vez; dados aleatórios são regenerados.
+## Slide 6
 
-## Slide 6: Blocos maiores reduziram o tempo em 20 MiB
+Dados da execução de 30/10/2026 em resultados/resumo.json. [{"peers":2,"block":1024,"seconds":3.1995},{"peers":4,"block":1024,"seconds":10.2469},{"peers":2,"block":4096,"seconds":1.5319},{"peers":4,"block":4096,"seconds":5.0194}]. Quatro peers entregam três cópias em malha completa. Os tempos incluem inicialização, logs e espera pelo contato com todos os vizinhos; uma medição por caso, sem inferir desempenho em LAN/WAN.
 
-- 2 peers: 2,5323 s (1 KiB) > 0,9107 s (4 KiB)
-- 4 peers: 4,6279 s (1 KiB) > 3,4303 s (4 KiB)
-- Medição inclui inicialização e logs; não representa WAN.
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** Mais peers na cadeia também significam mais cópias entregues. Não concluir que quatro peers aceleram ou pioram universalmente P2P.
+## Slide 7
 
-## Slide 7: As evidências vão além do arquivo final
+Os dois testes usam SIGKILL real durante downloads incompletos, com quatro peers em malha. No temporário, a única semente cai, os leechers preservam seus blocos em memória/disco e reconectam quando ela reinicia. No permanente, há duas sementes iniciais; uma cai e os três processos restantes concluem sem seu retorno. Ter cópias disponíveis é necessário para tolerar perda permanente. Tamanho e SHA-256 conferidos em todos os arquivos dos processos ativos; índices sem duplicação. Também passaram compartilhamento parcial, seeder tardio e múltiplas fontes. Evidência: resultados/queda_temporaria e resultados/queda_permanente.
 
-- 216 envios durante download no caso com atraso
-- Seeder tardio: 7 tentativas, recuperação correta
-- Malha: múltiplas fontes | 10 testes unitários aprovados
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Fala sugerida:** Abrir verificacao.json e um log received/sent. Mostrar complete=false. O teste de recuperação é de indisponibilidade inicial.
+## Slide 8
 
-## Slide 8: Demonstração e próximos passos
+Na raiz do projeto, executar python3 tests/integration.py --demo. O comando abre quatro processos, mostra portas e progresso no momento da queda e executa dois cenários. Primeiro: única semente morta e reiniciada. Segundo: uma de duas sementes morta sem retorno. Observar peer_offline, peer_reiniciado e integridade_confirmada. O comando valida os arquivos automaticamente e encerra os processos. Logs em resultados/demo. Augusto pode acompanhar o terminal por compartilhamento de tela. Ensaio entre máquinas remotas não foi realizado. Reiniciar um leecher ainda descarta o parcial; o teste mantém os leechers ativos.
 
-- Gerar metadado; iniciar A e B; comparar SHA-256
-- Limites: sem retomada persistente, TLS ou tracker
-- Código, testes, logs e relatório acompanham a entrega.
-
-**Fala sugerida:** Executar os comandos do README. Concluir explicando as escolhas e limites. Repositório público: Augusto42/sd-tp2-p2p-2026.
-
-## Perguntas prováveis
-
-- Por que TCP? Confiabilidade de transporte, com protocolo de frames próprio.
-- Como comprovar P2P? Cadeia força repasse e logs registram envio antes de completar.
-- O que ocorre se um peer cair? Reconexão e nova busca, se existir fonte; reinício do leecher não retoma estado.
-- SHA-256 garante segurança? Detecta divergência frente a metadado confiável; não autentica a origem.
-- Qual a limitação dos tempos? Uma execução por caso em loopback, incluindo custos de inicialização e logs.
+Fonte: https://github.com/Augusto42/sd-tp2-p2p-2026

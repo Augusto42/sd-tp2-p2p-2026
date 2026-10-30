@@ -8,8 +8,9 @@ test_whole_hash_checked (test_peer.Blocks.test_whole_hash_checked) ... ok
 test_fragmented_frame (test_peer.Frames.test_fragmented_frame) ... ok
 test_oversized_frame (test_peer.Frames.test_oversized_frame) ... ok
 test_truncated_frame (test_peer.Frames.test_truncated_frame) ... ok
+test_completed_leecher_still_contacts_neighbor (test_peer.Neighbors.test_completed_leecher_still_contacts_neighbor) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.011s
+Ran 11 tests in 0.026s
 
 OK

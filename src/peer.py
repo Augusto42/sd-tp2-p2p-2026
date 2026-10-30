@@ -122,10 +122,15 @@ class Peer:
             except ConnectionError: pass
 
     async def fetch(self, host, port):
-        while not self.done:
+        if self.seed or not self.m["blocks"]:
+            return
+        connected_once = False
+        # Mesmo downloads curtos devem estabelecer contato com todos os vizinhos.
+        while not self.done or not connected_once:
             writer = None
             try:
                 reader, writer = await asyncio.wait_for(asyncio.open_connection(host, port), 2)
+                connected_once = True
                 self.event('connected', source=port)
                 while not self.done:
                     await send(writer, json.dumps(dict(op='have', file=self.m['sha256'])).encode())
