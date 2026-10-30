@@ -39,9 +39,16 @@ Após validar o SHA-256 final, o arquivo parcial é renomeado na mesma pasta; a 
 6. Arquivo parcial em disco: evita manter o arquivo todo em RAM; escrita por offset permite chegada fora de ordem.
 7. Inventário consultado periodicamente: implementação direta e adequada aos tamanhos de teste; listas completas custam O(n) e não são ideais em grande escala.
 8. Malha completa: cada peer configura todos os demais como vizinhos. Os testes verificam conexão de cada leecher com todos os vizinhos, incluindo arquivos pequenos. Caminhos alternativos permitem continuar usando fontes ainda disponíveis.
-9. Logs JSONL: um registro por evento, analisável automaticamente, com fonte, índice e contagem recebida; medição inclui seu custo.
-10. Saída com nome fixo: elimina uso de nomes do metadado como caminhos arbitrários.
+9. Seleção circular: a prioridade de índices depende da porta local; isso evita que todos os leechers escolham sempre a mesma frente de blocos e favorece o repasse parcial. Não é rarest-first.
+10. Logs JSONL: um registro por evento, analisável automaticamente, com fonte, índice e contagem recebida; medição inclui seu custo.
+11. Saída com nome fixo: elimina uso de nomes do metadado como caminhos arbitrários.
 
 ## Garantias e limites de recuperação
 
 Blocos já validados permanecem disponíveis enquanto o processo vive. Falha de conexão, indisponibilidade inicial, resposta inválida e corrupção provocam nova tentativa; reservas são liberadas em `finally`. Não há limite total de download: se nenhuma fonte oferece um bloco necessário, o peer espera indefinidamente. Reiniciar um leecher descarta o parcial; retomada persistente não foi implementada. O teste `seeder_tardio` cobre indisponibilidade inicial. `queda_temporaria` mata a única semente durante o download e comprova reconexão após seu retorno, sem reiniciar os leechers. `queda_permanente` inicia duas sementes, mata uma durante o download e verifica a conclusão dos peers restantes sem seu retorno. Em ambos, há SIGKILL real, logs de retry, blocos recebidos após a queda e verificação final de tamanho/SHA-256. Corrupção é exercitada em teste unitário do armazenamento, não por injeção na rede.
+
+## Execução automática
+
+`executar.py` inicia os processos de `src/peer.py`, cria dados e metadados, monitora os arquivos, valida integridade e encerra os processos em `finally`. Sem argumentos, faz a demonstração; com `--testes`, executa os unitários e cinco repetições por configuração, calculando média e desvio-padrão amostral. O peer individual continua servindo até o executor encerrar a rede, evitando perder fontes necessárias a outros downloads.
+
+Nos testes `queda_aleatoria_N`, o peer é sorteado uniformemente entre os quatro IDs com `random.Random(N).randrange(4)`. A falha só é injetada depois de observar dados recebidos desse peer e downloads sobreviventes ainda incompletos. Registra-se SIGKILL, novas fontes e blocos após a queda. Duas sementes iniciais garantem disponibilidade mesmo se uma delas for escolhida.

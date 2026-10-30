@@ -139,7 +139,9 @@ class Peer:
                     available = json.loads(reply[1:])
                     if not isinstance(available, list) or any(type(i) is not int or not 0 <= i < len(self.m['blocks']) for i in available):
                         raise ValueError('inventário inválido')
-                    candidates = [i for i in available if i not in self.have and i not in self.busy]
+                    # Prioridades circulares diferentes evitam downloads idênticos em todos os peers.
+                    candidates = sorted((i for i in available if i not in self.have and i not in self.busy),
+                                        key=lambda i: (i - self.port) % len(self.m['blocks']))
                     for i in candidates:
                         if i in self.have or i in self.busy: continue
                         self.busy.add(i)

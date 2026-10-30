@@ -1,12 +1,17 @@
 {
   "date": "2026-10-30",
-  "matrix": 24,
-  "integration": 29,
+  "configurations": 24,
+  "repetitions": 5,
+  "integration": 130,
   "unit": 11,
-  "leechers_connections_and_blocks_checked": 55,
+  "leechers_audited": 240,
+  "statistics": "means and sample standard deviations independently recomputed: PASS",
+  "mesh_connections": "PASS",
+  "unique_indices_sources_size_sha256": "PASS",
+  "random_failures": 5,
   "temporary_failure": "PASS",
   "permanent_failure": "PASS",
-  "live_demo": "PASS",
-  "network": "loopback",
-  "topology": "mesh"
+  "demonstration": "PASS",
+  "network": "TCP loopback",
+  "report_pages": 4
 }

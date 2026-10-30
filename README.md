@@ -1,72 +1,65 @@
 # Transferência de arquivos P2P
 
-Sistemas Distribuídos - TP2 | CEFET-MG | 2026/2
+Sistemas Distribuídos — TP2 | CEFET-MG | 2026/2  
+Professora: Michelle Hanne  
+**Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO**  
+Código público: https://github.com/Augusto42/sd-tp2-p2p-2026
 
-**Integrantes:** Augusto Coelho Fagundes e ADJAILSON FREIRE DE SÁ FILHO.
+## Apresentação: um terminal, um comando
 
-**Professora:** Michelle Hanne.
-
-**Código-fonte:** https://github.com/Augusto42/sd-tp2-p2p-2026
-
-## Requisitos e execução
-
-Linux/macOS, Python 3.10 ou superior; nenhuma dependência externa para executar peers e testes. Validado em Linux; o tratamento de sinais usa `loop.add_signal_handler`, não suportado pelo loop padrão do Windows (usar WSL).
-
-Execute os comandos na raiz desta pasta. Use uma pasta de saída exclusiva para cada processo; iniciar um peer recria seu arquivo parcial. O metadado deve ser distribuído previamente a todos os nós.
+Requisitos: Python 3.10+ em Linux/macOS; no Windows, use WSL. Executar na raiz da pasta extraída:
 
 ```bash
-python3 -c "from pathlib import Path; import os; Path('origem.bin').write_bytes(os.urandom(1048576))"
-python3 src/peer.py manifest origem.bin arquivo.json --block-size 1024
+python3 executar.py
 ```
 
-Em quatro terminais, use malha completa (cada peer conhece os outros três):
+O programa gera o arquivo e os metadados, inicia quatro processos de `src/peer.py` em **malha completa**, provoca quedas durante a transferência, verifica tamanho/SHA-256 e **encerra todos os peers automaticamente**. Não é necessário abrir outros terminais nem configurar portas manualmente.
+
+A primeira demonstração derruba a única semente e a reinicia. A segunda sorteia um peer, encerra-o com SIGKILL e verifica a conclusão dos sobreviventes por outras fontes, sem reiniciar o peer morto. Nesse segundo cenário há duas sementes iniciais, garantindo uma cópia disponível. A semente do sorteio padrão é 2026; para outro sorteio reproduzível:
 
 ```bash
-# A — semente
-python3 src/peer.py run --meta arquivo.json --dir dados_a --port 9001 --neighbor 127.0.0.1:9002 --neighbor 127.0.0.1:9003 --neighbor 127.0.0.1:9004 --seed origem.bin --log a.jsonl
-# B
-python3 src/peer.py run --meta arquivo.json --dir dados_b --port 9002 --neighbor 127.0.0.1:9001 --neighbor 127.0.0.1:9003 --neighbor 127.0.0.1:9004 --log b.jsonl
-# C
-python3 src/peer.py run --meta arquivo.json --dir dados_c --port 9003 --neighbor 127.0.0.1:9001 --neighbor 127.0.0.1:9002 --neighbor 127.0.0.1:9004 --log c.jsonl
-# D
-python3 src/peer.py run --meta arquivo.json --dir dados_d --port 9004 --neighbor 127.0.0.1:9001 --neighbor 127.0.0.1:9002 --neighbor 127.0.0.1:9003 --log d.jsonl
+python3 executar.py --demo --seed 0
 ```
 
-A conecta-se a B/C/D quando atua como leecher; B a A/C/D; C a A/B/D; D a A/B/C. A semente completa atende conexões e não precisa baixar. O resultado fica em `dados_b/arquivo_final.bin` e nas outras pastas. Os processos continuam compartilhando depois de completar; encerre com Ctrl+C. Em máquinas distintas, use `--host` com o IP local e os IPs reais nos vizinhos.
+Observe `peer_offline`, `peer_reiniciado` e `integridade_confirmada`. Os eventos mostram o peer escolhido, os blocos já recebidos no momento da queda e o hash final. Os logs completos da demonstração ficam em `resultados/demo/`. Augusto pode acompanhar remotamente pelo compartilhamento da tela do terminal.
 
-### Demonstração ao vivo com um comando
+## Bateria automática e replicável
 
 ```bash
-python3 tests/integration.py --demo
+python3 executar.py --testes --repeticoes 5 --seed 2026
 ```
 
-O comando inicia quatro processos em malha e mostra os eventos `malha_iniciada`, `peer_offline`, `peer_reiniciado` e `integridade_confirmada`. Primeiro mata a única semente durante o download e a reinicia; depois mata uma das duas sementes e comprova que os peers restantes concluem sem seu retorno. Todos os arquivos finais ativos são conferidos por tamanho e SHA-256. Os logs ficam em `resultados/demo/`, separados da matriz oficial. Atrasos artificiais tornam a queda observável. É possível acompanhar remotamente pelo compartilhamento de tela do terminal; não exige quatro computadores.
+O comando executa os 11 testes unitários e 130 integrações:
 
-Se o único peer que possui certos blocos sair definitivamente, esses blocos deixam de estar disponíveis: é necessário seu retorno ou outra cópia. O leecher que permanece ativo conserva os blocos já recebidos; reiniciar esse leecher ainda descarta seu parcial.
+- 24 configurações × 5 repetições: 2/4 peers, blocos de 1.024/4.096 bytes e arquivos de 10/20 KiB, 1/5/10/20 MiB.
+- 3 cenários: compartilhamento parcial, semente tardia e múltiplas fontes.
+- 2 quedas controladas: temporária e permanente.
+- 5 quedas de peer sorteado com sementes 0 a 4.
 
-```bash
-sha256sum origem.bin dados_b/arquivo_final.bin
-python3 -m unittest discover -s tests -v
-python3 tests/integration.py          # matriz completa + 5 cenários
-python3 tests/integration.py --quick  # quatro combinações pequenas + 5 cenários
-```
+A ordem das configurações é embaralhada de forma reproduzível a cada repetição. Na matriz, a geração dos arquivos é pseudoaleatória e determinística: a mesma semente reproduz os mesmos bytes por tamanho de arquivo. Portas livres são escolhidas automaticamente; tempos e escalonamento variam entre execuções.
 
-Os testes de integração geram novos dados aleatórios a cada execução; preservam os hashes, metadados, logs completos, resultados CSV/JSON e ambiente, mas apagam os arquivos binários temporários para reduzir o pacote. Reproduz-se o procedimento, não os mesmos bytes aleatórios. Uma nova execução substitui os resultados dos cenários executados. Os tempos incluem inicialização, criação da cópia do seeder, polling e gravação de logs.
+`resultados/estatisticas.csv` e `.json` contêm média, **desvio-padrão amostral (n−1)**, mínimo, máximo, quantidade e os cinco tempos de cada configuração. `medicoes.json` associa cada tempo aos logs e metadados; `adicionais.json` contém os dados das falhas, fontes alternativas, blocos recebidos após a queda e tempo até a conclusão. `bateria.json` consolida a aprovação.
 
-## Organização
+Todos os cenários conferem tamanho, SHA-256, índices dos blocos e fontes. A matriz também exige que cada leecher tenha se conectado a **todos** os seus vizinhos. Todos os processos são encerrados em `finally`, inclusive quando um teste falha. A bateria pode levar alguns minutos.
 
-- `src/peer.py`: protocolo, servidor, cliente, fragmentação e montagem.
-- `tests/`: testes unitários e cenários multiprocessos.
-- `resultados/`: evidência real da execução; `resumo.csv`/`resumo.json` consolidam 29 cenários.
-- `docs/relatorio.pdf`: relatório de até cinco páginas.
-- `docs/apresentacao.pptx`: apresentação editável com notas do apresentador.
-- `docs/apresentacao.pdf`: apresentação pronta para projeção.
-- `docs/roteiro_apresentacao.md`: fala sugerida e demonstração.
-- `docs/protocolo.md`: especificação de mensagens, decisões e limites.
-- `docs/gerar_relatorio.py`: fonte do relatório, requer ReportLab.
+## Arquivos de entrega
 
-No ZIP de entrega, os logs estão descompactados. No GitHub, os logs completos estão em `resultados/evidencias.zip`; extraia esse arquivo na raiz do projeto para obter as pastas de cada cenário.
+- `executar.py`: comando único para demonstração e bateria.
+- `src/peer.py`: protocolo TCP, servidor, cliente, fragmentação e montagem.
+- `tests/`: testes unitários e executor multiprocessos.
+- `docs/relatorio.pdf`: relatório de quatro páginas, com média/desvio e resultados das quedas.
+- `docs/apresentacao.pptx` e `.pdf`: slides e notas para apresentação.
+- `docs/roteiro_apresentacao.md`: roteiro extraído das notas.
+- `docs/protocolo.md`: mensagens e decisões de implementação.
+- `docs/gerar_relatorio.py`: gerador do relatório; requer ReportLab apenas para regenerar o PDF.
+- `resultados/`: resultados e logs. Manifestos compartilhados ficam em `entradas/`; cada medição aponta para seu manifesto em `metadados_ref.txt`.
 
-## Limites
+No ZIP, os logs estão descompactados. No GitHub, extraia `resultados/evidencias.zip` na raiz para obter os logs detalhados.
 
-Vizinhos estáticos, um arquivo por execução, metadado local confiável, ambiente cooperativo. Não há tracker, descoberta, TLS, autenticação, retomada após reinício do processo nem controle de congestionamento no nível da aplicação. TCP cuida da ordenação e retransmissão de bytes; a aplicação verifica hashes e tenta novamente após falhas. O conjunto `busy` evita pedidos simultâneos do mesmo bloco, mas não implementa rarest-first nem justiça garantida entre fontes. O frame tem limite de 8 MiB; os inventários dos tamanhos do trabalho cabem nesse limite. Os dados no disco usam operações síncronas curtas dentro do loop assíncrono. Os testes locais não permitem inferir ganhos em WAN ou resultados estatísticos.
+## Funcionamento e limites
+
+Com quatro peers, A conhece B/C/D; B conhece A/C/D; C conhece A/B/D; D conhece A/B/C. Cada leecher abre uma tarefa por vizinho. A semente completa atende solicitações sem precisar baixar. As prioridades circulares dos blocos diferem entre peers para favorecer a redistribuição durante o download.
+
+Um peer individual permanece servindo após concluir, pois fechar sua conexão imediatamente poderia impedir a conclusão dos demais. **O executor encerra a rede quando todos os peers ativos concluem.**
+
+A recuperação mantém os leechers sobreviventes ativos. Reiniciar o próprio leecher ainda descarta seu parcial. Se todos os detentores de um bloco saírem definitivamente, não há como recuperar esse bloco sem outra cópia. Metadados são previamente distribuídos e confiáveis; não há tracker, descoberta automática ou autenticação. Ensaios realizados em TCP loopback; não foram medidos em máquinas remotas.

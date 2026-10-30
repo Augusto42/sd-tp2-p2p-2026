@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path
 import platform
+import random
 import socket
 import subprocess
 import sys
@@ -24,10 +25,10 @@ def free_ports(n):
     for s in sockets:s.close()
     return ports
 
-def run_case(size, block, count, name, recovery=False, delay=0):
+def run_case(size, block, count, name, recovery=False, delay=0, random_seed=None):
     dest=ROOT/'resultados'/name; dest.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory() as tmp:
-        tmp=Path(tmp); source=tmp/'source.bin'; source.write_bytes(os.urandom(size))
+        tmp=Path(tmp); source=tmp/'source.bin'; source.write_bytes(random.Random(random_seed).randbytes(size) if random_seed is not None else os.urandom(size))
         m=manifest(source,block); meta=tmp/'meta.json'; meta.write_text(json.dumps(m))
         (dest/'metadados.json').write_text(json.dumps(m))
         ports=free_ports(count); processes=[]; streams=[]
@@ -90,9 +91,10 @@ def run_case(size, block, count, name, recovery=False, delay=0):
         return row
 
 
-def run_failure(mode, demo=False):
+def run_failure(mode, demo=False, random_seed=None):
     """SIGKILL durante download: reconexão ou continuidade por outra fonte."""
-    name='queda_'+mode
+    victim=random.Random(random_seed).randrange(4) if mode=='aleatoria' else 0
+    name='queda_'+mode+(f'_{random_seed}' if mode=='aleatoria' else '')
     dest=ROOT/'resultados'/('demo' if demo else '')/name
     dest.mkdir(parents=True,exist_ok=True)
     for old in dest.glob('peer_*'): old.unlink()
@@ -126,22 +128,25 @@ def run_failure(mode, demo=False):
                 '--port',str(ports[i]),'--log',str(dest/f'peer_{i}{suffix}.jsonl'),'--serve-delay','0.01' if demo else '0.003']
             for j in range(count):
                 if i!=j: command+=['--neighbor',f'127.0.0.1:{ports[j]}']
-            if i==0 or (mode=='permanente' and i==1): command+=['--seed',str(source)]
+            if i==0 or (mode!='temporaria' and i==1): command+=['--seed',str(source)]
             stream=(dest/f'peer_{i}{suffix}.stderr').open('w'); streams.append(stream)
             processes[i]=subprocess.Popen(command,stdout=stream,stderr=stream)
         try:
             for i in range(count): start(i)
-            announce('malha_iniciada',ports=ports,seeds=[0,1] if mode=='permanente' else [0])
+            announce('malha_iniciada',ports=ports,seeds=[0,1] if mode!='temporaria' else [0])
             # Espera downloads reais e todas as conexões iniciais antes de provocar a falha.
-            leechers=[2,3] if mode=='permanente' else [1,2,3]
+            leechers=[2,3] if mode!='temporaria' else [1,2,3]
+            survivors=[i for i in leechers if i!=victim]
             wait(lambda: all({e['source'] for e in events(i) if e['event']=='connected'}==set(ports)-{ports[i]} for i in leechers)
-                and sum(e['event']=='received' and e['source']==ports[0] for e in events(2))>=20)
+                and all(sum(e['event']=='received' for e in events(i))>=20 for i in leechers)
+                and any(e['event']=='received' and e['source']==ports[victim] for i in survivors for e in events(i)))
+            leechers=survivors
             before={i:len(events(i)) for i in leechers}
             counts={i:sum(e['event']=='received' for e in events(i)) for i in leechers}
             assert all(0<n<len(m['blocks']) for n in counts.values()), counts
-            failed=processes.pop(0); failed.kill(); failed.wait(timeout=5)
-            announce('peer_offline',peer=0,port=ports[0],blocks_received=counts,total_blocks=len(m['blocks']))
-            wait(lambda: all(any(e['event']=='retry' and e['source']==ports[0] for e in events(i)[before[i]:]) for i in leechers))
+            failed=processes.pop(victim); failed.kill(); failed.wait(timeout=5)
+            announce('peer_offline',peer=victim,port=ports[victim],blocks_received=counts,total_blocks=len(m['blocks']))
+            wait(lambda: all(any(e['event']=='retry' and e['source']==ports[victim] for e in events(i)[before[i]:]) for i in leechers))
             time.sleep(2 if demo else .6)
             if mode=='temporaria':
                 assert all(not (tmp/str(i)/'arquivo_final.bin').exists() for i in leechers), 'faltam blocos exclusivos do seeder offline'
@@ -159,8 +164,8 @@ def run_failure(mode, demo=False):
                 assert len(got)==len(m['blocks'])
                 assert {e['index'] for e in got}==set(range(len(m['blocks'])))
                 assert any(e['event']=='received' for e in after[i])
-                if mode=='permanente':
-                    assert any(e['event']=='received' and e['source']!=ports[0] for e in after[i])
+                if mode!='temporaria':
+                    assert any(e['event']=='received' and e['source']!=ports[victim] for e in after[i])
                 if mode=='temporaria':
                     assert any(e['event']=='connected' and e['source']==ports[0] for e in after[i])
             announce('integridade_confirmada',peers=active,sha256=m['sha256'],size_bytes=size)
@@ -176,7 +181,10 @@ def run_failure(mode, demo=False):
         aggregate_mib_s=None,integrity='PASS',early_served=sum(e['event']=='sent' and not e.get('complete',True) for es in all_events for e in es),
         retries=sum(e['event']=='retry' for es in all_events for e in es),
         sources={str(i):sorted({e['source'] for e in all_events[i] if e['event']=='received'}) for i in leechers},
-        sha256=m['sha256'],fault=mode,verified_peers=active,blocks_before_failure=counts,
+        sha256=m['sha256'],fault=mode,failed_peer=victim,failed_port=ports[victim],peer_ports=ports,random_seed=random_seed,verified_peers=active,blocks_before_failure=counts,
+        received_after_failure={str(i):sum(e['event']=='received' for e in after[i]) for i in leechers},
+        sources_after_failure={str(i):sorted({e['source'] for e in after[i] if e['event']=='received'}) for i in leechers},
+        recovery_seconds=round(next(e['seconds'] for e in controller if e['event']=='integridade_confirmada')-next(e['seconds'] for e in controller if e['event']=='peer_offline'),4),
         recovery='reconexao apos retorno da unica fonte' if mode=='temporaria' else 'conclusao sem retorno do peer; segunda semente disponivel')
     (dest/'controle.json').write_text(json.dumps(controller,indent=2))
     (dest/'verificacao.json').write_text(json.dumps(row,indent=2))

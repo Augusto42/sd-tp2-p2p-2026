@@ -1,0 +1,132 @@
+11 testes unitários: PASS
+[001/120] repetição 1: 4 peers, bloco 4096, arquivo 20971520 bytes — 2.4346 s — PASS
+[002/120] repetição 1: 4 peers, bloco 4096, arquivo 20480 bytes — 0.5948 s — PASS
+[003/120] repetição 1: 2 peers, bloco 1024, arquivo 1048576 bytes — 0.5717 s — PASS
+[004/120] repetição 1: 4 peers, bloco 4096, arquivo 10485760 bytes — 1.3773 s — PASS
+[005/120] repetição 1: 2 peers, bloco 4096, arquivo 20480 bytes — 0.4332 s — PASS
+[006/120] repetição 1: 2 peers, bloco 1024, arquivo 20971520 bytes — 5.1410 s — PASS
+[007/120] repetição 1: 2 peers, bloco 1024, arquivo 10485760 bytes — 1.9817 s — PASS
+[008/120] repetição 1: 2 peers, bloco 4096, arquivo 20971520 bytes — 1.1294 s — PASS
+[009/120] repetição 1: 4 peers, bloco 1024, arquivo 10240 bytes — 0.5586 s — PASS
+[010/120] repetição 1: 4 peers, bloco 1024, arquivo 5242880 bytes — 2.1063 s — PASS
+[011/120] repetição 1: 4 peers, bloco 4096, arquivo 1048576 bytes — 0.6084 s — PASS
+[012/120] repetição 1: 2 peers, bloco 1024, arquivo 20480 bytes — 0.3066 s — PASS
+[013/120] repetição 1: 4 peers, bloco 1024, arquivo 20971520 bytes — 11.3015 s — PASS
+[014/120] repetição 1: 4 peers, bloco 1024, arquivo 1048576 bytes — 0.7572 s — PASS
+[015/120] repetição 1: 4 peers, bloco 4096, arquivo 5242880 bytes — 0.9667 s — PASS
+[016/120] repetição 1: 4 peers, bloco 1024, arquivo 10485760 bytes — 3.3753 s — PASS
+[017/120] repetição 1: 2 peers, bloco 4096, arquivo 10485760 bytes — 0.8022 s — PASS
+[018/120] repetição 1: 4 peers, bloco 1024, arquivo 20480 bytes — 0.5964 s — PASS
+[019/120] repetição 1: 2 peers, bloco 1024, arquivo 5242880 bytes — 1.0674 s — PASS
+[020/120] repetição 1: 2 peers, bloco 4096, arquivo 1048576 bytes — 0.5937 s — PASS
+[021/120] repetição 1: 2 peers, bloco 1024, arquivo 10240 bytes — 0.4281 s — PASS
+[022/120] repetição 1: 2 peers, bloco 4096, arquivo 10240 bytes — 0.4286 s — PASS
+[023/120] repetição 1: 2 peers, bloco 4096, arquivo 5242880 bytes — 0.6581 s — PASS
+[024/120] repetição 1: 4 peers, bloco 4096, arquivo 10240 bytes — 0.6953 s — PASS
+[025/120] repetição 2: 2 peers, bloco 4096, arquivo 10240 bytes — 0.4744 s — PASS
+[026/120] repetição 2: 4 peers, bloco 4096, arquivo 10485760 bytes — 2.0760 s — PASS
+[027/120] repetição 2: 4 peers, bloco 4096, arquivo 10240 bytes — 0.7847 s — PASS
+[028/120] repetição 2: 4 peers, bloco 4096, arquivo 20480 bytes — 0.7525 s — PASS
+[029/120] repetição 2: 4 peers, bloco 1024, arquivo 10240 bytes — 0.6936 s — PASS
+[030/120] repetição 2: 2 peers, bloco 4096, arquivo 5242880 bytes — 0.6935 s — PASS
+[031/120] repetição 2: 4 peers, bloco 4096, arquivo 5242880 bytes — 1.4239 s — PASS
+[032/120] repetição 2: 2 peers, bloco 1024, arquivo 5242880 bytes — 1.5280 s — PASS
+[033/120] repetição 2: 2 peers, bloco 4096, arquivo 1048576 bytes — 0.5729 s — PASS
+[034/120] repetição 2: 2 peers, bloco 1024, arquivo 10485760 bytes — 2.0369 s — PASS
+[035/120] repetição 2: 2 peers, bloco 4096, arquivo 10485760 bytes — 0.8802 s — PASS
+[036/120] repetição 2: 4 peers, bloco 1024, arquivo 10485760 bytes — 4.8744 s — PASS
+[037/120] repetição 2: 4 peers, bloco 1024, arquivo 5242880 bytes — 2.2829 s — PASS
+[038/120] repetição 2: 4 peers, bloco 1024, arquivo 1048576 bytes — 0.7733 s — PASS
+[039/120] repetição 2: 2 peers, bloco 1024, arquivo 20480 bytes — 0.4097 s — PASS
+[040/120] repetição 2: 2 peers, bloco 4096, arquivo 20480 bytes — 0.4754 s — PASS
+[041/120] repetição 2: 4 peers, bloco 1024, arquivo 20971520 bytes — 11.3061 s — PASS
+[042/120] repetição 2: 2 peers, bloco 4096, arquivo 20971520 bytes — 1.2537 s — PASS
+[043/120] repetição 2: 2 peers, bloco 1024, arquivo 1048576 bytes — 0.5726 s — PASS
+[044/120] repetição 2: 2 peers, bloco 1024, arquivo 20971520 bytes — 3.7553 s — PASS
+[045/120] repetição 2: 4 peers, bloco 4096, arquivo 20971520 bytes — 3.4120 s — PASS
+[046/120] repetição 2: 2 peers, bloco 1024, arquivo 10240 bytes — 0.4329 s — PASS
+[047/120] repetição 2: 4 peers, bloco 1024, arquivo 20480 bytes — 0.8046 s — PASS
+[048/120] repetição 2: 4 peers, bloco 4096, arquivo 1048576 bytes — 0.8851 s — PASS
+[049/120] repetição 3: 2 peers, bloco 4096, arquivo 10485760 bytes — 0.8006 s — PASS
+[050/120] repetição 3: 4 peers, bloco 4096, arquivo 10240 bytes — 0.6028 s — PASS
+[051/120] repetição 3: 2 peers, bloco 1024, arquivo 5242880 bytes — 1.3395 s — PASS
+[052/120] repetição 3: 2 peers, bloco 1024, arquivo 10240 bytes — 0.4950 s — PASS
+[053/120] repetição 3: 2 peers, bloco 4096, arquivo 10240 bytes — 0.4330 s — PASS
+[054/120] repetição 3: 4 peers, bloco 1024, arquivo 10240 bytes — 0.7481 s — PASS
+[055/120] repetição 3: 2 peers, bloco 4096, arquivo 5242880 bytes — 0.6532 s — PASS
+[056/120] repetição 3: 4 peers, bloco 1024, arquivo 1048576 bytes — 0.9053 s — PASS
+[057/120] repetição 3: 2 peers, bloco 4096, arquivo 1048576 bytes — 0.5498 s — PASS
+[058/120] repetição 3: 4 peers, bloco 4096, arquivo 20480 bytes — 0.7057 s — PASS
+[059/120] repetição 3: 2 peers, bloco 4096, arquivo 20480 bytes — 0.4466 s — PASS
+[060/120] repetição 3: 2 peers, bloco 1024, arquivo 1048576 bytes — 0.6120 s — PASS
+[061/120] repetição 3: 4 peers, bloco 4096, arquivo 1048576 bytes — 0.6256 s — PASS
+[062/120] repetição 3: 4 peers, bloco 4096, arquivo 10485760 bytes — 1.5736 s — PASS
+[063/120] repetição 3: 4 peers, bloco 1024, arquivo 20971520 bytes — 8.5974 s — PASS
+[064/120] repetição 3: 2 peers, bloco 1024, arquivo 20480 bytes — 0.4352 s — PASS
+[065/120] repetição 3: 4 peers, bloco 1024, arquivo 10485760 bytes — 6.2037 s — PASS
+[066/120] repetição 3: 2 peers, bloco 1024, arquivo 10485760 bytes — 2.0016 s — PASS
+[067/120] repetição 3: 4 peers, bloco 1024, arquivo 5242880 bytes — 2.4382 s — PASS
+[068/120] repetição 3: 2 peers, bloco 1024, arquivo 20971520 bytes — 3.3614 s — PASS
+[069/120] repetição 3: 4 peers, bloco 1024, arquivo 20480 bytes — 0.7484 s — PASS
+[070/120] repetição 3: 2 peers, bloco 4096, arquivo 20971520 bytes — 1.2384 s — PASS
+[071/120] repetição 3: 4 peers, bloco 4096, arquivo 5242880 bytes — 1.0205 s — PASS
+[072/120] repetição 3: 4 peers, bloco 4096, arquivo 20971520 bytes — 3.2178 s — PASS
+[073/120] repetição 4: 4 peers, bloco 4096, arquivo 20480 bytes — 0.6463 s — PASS
+[074/120] repetição 4: 4 peers, bloco 1024, arquivo 20480 bytes — 0.6859 s — PASS
+[075/120] repetição 4: 4 peers, bloco 1024, arquivo 10485760 bytes — 3.9055 s — PASS
+[076/120] repetição 4: 4 peers, bloco 4096, arquivo 10240 bytes — 0.7248 s — PASS
+[077/120] repetição 4: 2 peers, bloco 4096, arquivo 10485760 bytes — 0.7991 s — PASS
+[078/120] repetição 4: 2 peers, bloco 4096, arquivo 1048576 bytes — 0.4704 s — PASS
+[079/120] repetição 4: 2 peers, bloco 1024, arquivo 1048576 bytes — 0.5723 s — PASS
+[080/120] repetição 4: 4 peers, bloco 4096, arquivo 10485760 bytes — 1.5219 s — PASS
+[081/120] repetição 4: 2 peers, bloco 4096, arquivo 20480 bytes — 0.3051 s — PASS
+[082/120] repetição 4: 4 peers, bloco 1024, arquivo 10240 bytes — 0.6307 s — PASS
+[083/120] repetição 4: 2 peers, bloco 1024, arquivo 20480 bytes — 0.4077 s — PASS
+[084/120] repetição 4: 4 peers, bloco 4096, arquivo 20971520 bytes — 2.1876 s — PASS
+[085/120] repetição 4: 4 peers, bloco 1024, arquivo 20971520 bytes — 7.4895 s — PASS
+[086/120] repetição 4: 2 peers, bloco 4096, arquivo 10240 bytes — 0.3277 s — PASS
+[087/120] repetição 4: 2 peers, bloco 1024, arquivo 20971520 bytes — 4.6160 s — PASS
+[088/120] repetição 4: 2 peers, bloco 4096, arquivo 20971520 bytes — 1.5704 s — PASS
+[089/120] repetição 4: 4 peers, bloco 1024, arquivo 5242880 bytes — 2.1263 s — PASS
+[090/120] repetição 4: 2 peers, bloco 4096, arquivo 5242880 bytes — 0.8191 s — PASS
+[091/120] repetição 4: 4 peers, bloco 4096, arquivo 5242880 bytes — 0.9627 s — PASS
+[092/120] repetição 4: 2 peers, bloco 1024, arquivo 10240 bytes — 0.4683 s — PASS
+[093/120] repetição 4: 2 peers, bloco 1024, arquivo 10485760 bytes — 2.0697 s — PASS
+[094/120] repetição 4: 4 peers, bloco 4096, arquivo 1048576 bytes — 0.6110 s — PASS
+[095/120] repetição 4: 2 peers, bloco 1024, arquivo 5242880 bytes — 1.1688 s — PASS
+[096/120] repetição 4: 4 peers, bloco 1024, arquivo 1048576 bytes — 0.9777 s — PASS
+[097/120] repetição 5: 4 peers, bloco 4096, arquivo 20971520 bytes — 2.2290 s — PASS
+[098/120] repetição 5: 4 peers, bloco 1024, arquivo 5242880 bytes — 3.4809 s — PASS
+[099/120] repetição 5: 4 peers, bloco 1024, arquivo 10485760 bytes — 5.0326 s — PASS
+[100/120] repetição 5: 2 peers, bloco 4096, arquivo 20971520 bytes — 1.5231 s — PASS
+[101/120] repetição 5: 2 peers, bloco 1024, arquivo 20971520 bytes — 3.3776 s — PASS
+[102/120] repetição 5: 4 peers, bloco 1024, arquivo 1048576 bytes — 0.7605 s — PASS
+[103/120] repetição 5: 2 peers, bloco 1024, arquivo 10240 bytes — 0.4064 s — PASS
+[104/120] repetição 5: 2 peers, bloco 1024, arquivo 5242880 bytes — 1.2763 s — PASS
+[105/120] repetição 5: 4 peers, bloco 4096, arquivo 10240 bytes — 0.6467 s — PASS
+[106/120] repetição 5: 2 peers, bloco 4096, arquivo 10240 bytes — 0.3315 s — PASS
+[107/120] repetição 5: 4 peers, bloco 4096, arquivo 10485760 bytes — 1.4652 s — PASS
+[108/120] repetição 5: 4 peers, bloco 1024, arquivo 10240 bytes — 0.6823 s — PASS
+[109/120] repetição 5: 2 peers, bloco 1024, arquivo 10485760 bytes — 1.7291 s — PASS
+[110/120] repetição 5: 2 peers, bloco 1024, arquivo 20480 bytes — 0.4072 s — PASS
+[111/120] repetição 5: 4 peers, bloco 4096, arquivo 5242880 bytes — 1.0359 s — PASS
+[112/120] repetição 5: 4 peers, bloco 4096, arquivo 20480 bytes — 0.6192 s — PASS
+[113/120] repetição 5: 2 peers, bloco 4096, arquivo 20480 bytes — 0.4269 s — PASS
+[114/120] repetição 5: 2 peers, bloco 4096, arquivo 10485760 bytes — 0.7824 s — PASS
+[115/120] repetição 5: 2 peers, bloco 4096, arquivo 5242880 bytes — 0.7883 s — PASS
+[116/120] repetição 5: 2 peers, bloco 1024, arquivo 1048576 bytes — 0.4701 s — PASS
+[117/120] repetição 5: 4 peers, bloco 4096, arquivo 1048576 bytes — 0.6974 s — PASS
+[118/120] repetição 5: 2 peers, bloco 4096, arquivo 1048576 bytes — 0.3473 s — PASS
+[119/120] repetição 5: 4 peers, bloco 1024, arquivo 20480 bytes — 0.6001 s — PASS
+[120/120] repetição 5: 4 peers, bloco 1024, arquivo 20971520 bytes — 9.3938 s — PASS
+compartilhamento_parcial: PASS
+seeder_tardio: PASS
+malha_completa: PASS
+queda_temporaria: PASS
+queda_permanente: PASS
+queda_aleatoria_0: PASS
+queda_aleatoria_1: PASS
+queda_aleatoria_2: PASS
+queda_aleatoria_3: PASS
+queda_aleatoria_4: PASS
+CONCLUÍDO: 130 integrações aprovadas; todos os processos encerrados.

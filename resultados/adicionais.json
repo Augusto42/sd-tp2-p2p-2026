@@ -1,0 +1,501 @@
+[
+  {
+    "case": "compartilhamento_parcial",
+    "size_bytes": 131123,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.8328,
+    "aggregate_mib_s": 0.45,
+    "integrity": "PASS",
+    "early_served": 83,
+    "retries": 6,
+    "sources": {
+      "1": [
+        49577,
+        50975
+      ],
+      "2": [
+        42817,
+        49577
+      ],
+      "3": [
+        42817,
+        49577,
+        50975
+      ]
+    },
+    "sha256": "4fba86b9b2279a0a46064c5a2e0e32b444c32fc212033f8d55f37f55dbd8b6d7"
+  },
+  {
+    "case": "seeder_tardio",
+    "size_bytes": 65539,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.0055,
+    "aggregate_mib_s": 0.062,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 7,
+    "sources": {
+      "1": [
+        33535
+      ]
+    },
+    "sha256": "a62bb671a123949a60d92ececfaca891dea7e19e2663de7ff1ebfe19b30e1e8e"
+  },
+  {
+    "case": "malha_completa",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6667,
+    "aggregate_mib_s": 4.5,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 6,
+    "sources": {
+      "1": [
+        40547,
+        43743,
+        51917
+      ],
+      "2": [
+        43743,
+        51917
+      ],
+      "3": [
+        51917
+      ]
+    },
+    "sha256": "1755b9f209565b4263cd385e26e2d8f94e94e455a4e5142846f451b15527eebe"
+  },
+  {
+    "case": "queda_temporaria",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.3703,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 360,
+    "retries": 36,
+    "sources": {
+      "1": [
+        47715,
+        49101,
+        55871
+      ],
+      "2": [
+        44513,
+        49101,
+        55871
+      ],
+      "3": [
+        44513,
+        47715,
+        49101
+      ]
+    },
+    "sha256": "7c8e813c2753e905cd00cb0a8006cda2380e9ce651495a7d578a7f74a00f6608",
+    "fault": "temporaria",
+    "failed_peer": 0,
+    "failed_port": 49101,
+    "peer_ports": [
+      49101,
+      44513,
+      47715,
+      55871
+    ],
+    "random_seed": null,
+    "verified_peers": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "blocks_before_failure": {
+      "1": 30,
+      "2": 28,
+      "3": 27
+    },
+    "received_after_failure": {
+      "1": 483,
+      "2": 486,
+      "3": 487
+    },
+    "sources_after_failure": {
+      "1": [
+        47715,
+        49101,
+        55871
+      ],
+      "2": [
+        44513,
+        49101,
+        55871
+      ],
+      "3": [
+        44513,
+        47715,
+        49101
+      ]
+    },
+    "recovery_seconds": 2.6705,
+    "recovery": "reconexao apos retorno da unica fonte"
+  },
+  {
+    "case": "queda_permanente",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.5781,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 90,
+    "retries": 39,
+    "sources": {
+      "2": [
+        41917,
+        43361,
+        59149
+      ],
+      "3": [
+        41917,
+        43361,
+        47315
+      ]
+    },
+    "sha256": "518feffe116b6bd760093326a617c8c4df7098c985713fb5c588a462555b4c4a",
+    "fault": "permanente",
+    "failed_peer": 0,
+    "failed_port": 43361,
+    "peer_ports": [
+      43361,
+      41917,
+      47315,
+      59149
+    ],
+    "random_seed": null,
+    "verified_peers": [
+      1,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 59,
+      "3": 73
+    },
+    "received_after_failure": {
+      "2": 454,
+      "3": 440
+    },
+    "sources_after_failure": {
+      "2": [
+        41917,
+        59149
+      ],
+      "3": [
+        41917,
+        47315
+      ]
+    },
+    "recovery_seconds": 1.7352,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  },
+  {
+    "case": "queda_aleatoria_0",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.9303,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 20,
+    "retries": 17,
+    "sources": {
+      "2": [
+        38031,
+        43499,
+        44917
+      ]
+    },
+    "sha256": "9fd6bacd218559526a9fc1abd35692c465fede0352bc1ce148c8eecce6ec6081",
+    "fault": "aleatoria",
+    "failed_peer": 3,
+    "failed_port": 44917,
+    "peer_ports": [
+      38031,
+      43499,
+      48115,
+      44917
+    ],
+    "random_seed": 0,
+    "verified_peers": [
+      0,
+      1,
+      2
+    ],
+    "blocks_before_failure": {
+      "2": 111
+    },
+    "received_after_failure": {
+      "2": 402
+    },
+    "sources_after_failure": {
+      "2": [
+        38031,
+        43499
+      ]
+    },
+    "recovery_seconds": 0.8297,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  },
+  {
+    "case": "queda_aleatoria_1",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.4502,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 112,
+    "retries": 39,
+    "sources": {
+      "2": [
+        36089,
+        45867,
+        51943
+      ],
+      "3": [
+        36089,
+        46947,
+        51943
+      ]
+    },
+    "sha256": "6a8529956c7a3c8926785a34bf6e4527a0193725b1aa43e8d96ff26943c9fbfd",
+    "fault": "aleatoria",
+    "failed_peer": 1,
+    "failed_port": 51943,
+    "peer_ports": [
+      36089,
+      51943,
+      46947,
+      45867
+    ],
+    "random_seed": 1,
+    "verified_peers": [
+      0,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 26,
+      "3": 28
+    },
+    "received_after_failure": {
+      "2": 488,
+      "3": 487
+    },
+    "sources_after_failure": {
+      "2": [
+        36089,
+        45867
+      ],
+      "3": [
+        36089,
+        46947,
+        51943
+      ]
+    },
+    "recovery_seconds": 1.7487,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  },
+  {
+    "case": "queda_aleatoria_2",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.3616,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 242,
+    "retries": 37,
+    "sources": {
+      "2": [
+        45089,
+        59655,
+        60595
+      ],
+      "3": [
+        41481,
+        45089,
+        59655
+      ]
+    },
+    "sha256": "c1208dd98a06878af2b6d19f1e3ed46275d0af1d3cdcfac5e4436e7a8e73d617",
+    "fault": "aleatoria",
+    "failed_peer": 0,
+    "failed_port": 59655,
+    "peer_ports": [
+      59655,
+      45089,
+      41481,
+      60595
+    ],
+    "random_seed": 2,
+    "verified_peers": [
+      1,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 65,
+      "3": 52
+    },
+    "received_after_failure": {
+      "2": 449,
+      "3": 462
+    },
+    "sources_after_failure": {
+      "2": [
+        45089,
+        60595
+      ],
+      "3": [
+        41481,
+        45089,
+        59655
+      ]
+    },
+    "recovery_seconds": 1.3939,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  },
+  {
+    "case": "queda_aleatoria_3",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.467,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 186,
+    "retries": 37,
+    "sources": {
+      "2": [
+        41419,
+        44605,
+        51771
+      ],
+      "3": [
+        44605,
+        45605,
+        51771
+      ]
+    },
+    "sha256": "c068aedf351f92f867fc32fb74552f81b2c1b05711a31ff151a06eeb3f5b86f2",
+    "fault": "aleatoria",
+    "failed_peer": 1,
+    "failed_port": 51771,
+    "peer_ports": [
+      44605,
+      51771,
+      45605,
+      41419
+    ],
+    "random_seed": 3,
+    "verified_peers": [
+      0,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 38,
+      "3": 20
+    },
+    "received_after_failure": {
+      "2": 475,
+      "3": 493
+    },
+    "sources_after_failure": {
+      "2": [
+        41419,
+        44605
+      ],
+      "3": [
+        44605,
+        45605
+      ]
+    },
+    "recovery_seconds": 1.654,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  },
+  {
+    "case": "queda_aleatoria_4",
+    "size_bytes": 524325,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.973,
+    "aggregate_mib_s": null,
+    "integrity": "PASS",
+    "early_served": 398,
+    "retries": 25,
+    "sources": {
+      "2": [
+        38713,
+        48885,
+        57267
+      ],
+      "3": [
+        38713,
+        48055,
+        57267
+      ]
+    },
+    "sha256": "bd2b917729e756f7f55137f5ddc52c727f87edca06b9bdf8ef3e0a86593431d0",
+    "fault": "aleatoria",
+    "failed_peer": 1,
+    "failed_port": 57267,
+    "peer_ports": [
+      38713,
+      57267,
+      48055,
+      48885
+    ],
+    "random_seed": 4,
+    "verified_peers": [
+      0,
+      2,
+      3
+    ],
+    "blocks_before_failure": {
+      "2": 41,
+      "3": 59
+    },
+    "received_after_failure": {
+      "2": 472,
+      "3": 454
+    },
+    "sources_after_failure": {
+      "2": [
+        38713,
+        48885
+      ],
+      "3": [
+        38713,
+        48055
+      ]
+    },
+    "recovery_seconds": 1.1411,
+    "recovery": "conclusao sem retorno do peer; segunda semente disponivel"
+  }
+]

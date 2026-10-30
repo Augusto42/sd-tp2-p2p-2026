@@ -1,0 +1,3151 @@
+[
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.4346,
+    "aggregate_mib_s": 24.644,
+    "integrity": "PASS",
+    "early_served": 6608,
+    "retries": 13,
+    "sources": {
+      "1": [
+        34457,
+        38293,
+        45179
+      ],
+      "2": [
+        34457,
+        38293,
+        42949
+      ],
+      "3": [
+        34457,
+        42949,
+        45179
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 1,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.5948,
+    "aggregate_mib_s": 0.099,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        42395,
+        43817
+      ],
+      "2": [
+        42395,
+        43817,
+        56123
+      ],
+      "3": [
+        43817
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 1,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5717,
+    "aggregate_mib_s": 1.749,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        45863
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 1,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.3773,
+    "aggregate_mib_s": 21.782,
+    "integrity": "PASS",
+    "early_served": 3985,
+    "retries": 8,
+    "sources": {
+      "1": [
+        54439,
+        54943,
+        60465
+      ],
+      "2": [
+        54439,
+        54943,
+        55203
+      ],
+      "3": [
+        54943,
+        55203,
+        60465
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 1,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4332,
+    "aggregate_mib_s": 0.045,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        43203
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 1,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 5.141,
+    "aggregate_mib_s": 3.89,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        41411
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 1,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.9817,
+    "aggregate_mib_s": 5.046,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        57157
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 1,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.1294,
+    "aggregate_mib_s": 17.708,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        59765
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 1,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.5586,
+    "aggregate_mib_s": 0.052,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 5,
+    "sources": {
+      "1": [
+        38355
+      ],
+      "2": [
+        36825,
+        59447
+      ],
+      "3": [
+        36825
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 1,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.1063,
+    "aggregate_mib_s": 7.121,
+    "integrity": "PASS",
+    "early_served": 7534,
+    "retries": 6,
+    "sources": {
+      "1": [
+        42177,
+        46381,
+        59351
+      ],
+      "2": [
+        35975,
+        42177,
+        59351
+      ],
+      "3": [
+        35975,
+        42177,
+        46381
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 1,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6084,
+    "aggregate_mib_s": 4.931,
+    "integrity": "PASS",
+    "early_served": 148,
+    "retries": 5,
+    "sources": {
+      "1": [
+        45627
+      ],
+      "2": [
+        37671,
+        45627,
+        57073
+      ],
+      "3": [
+        45627,
+        57073
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 1,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.3066,
+    "aggregate_mib_s": 0.064,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        46327
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 1,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 11.3015,
+    "aggregate_mib_s": 5.309,
+    "integrity": "PASS",
+    "early_served": 10915,
+    "retries": 9,
+    "sources": {
+      "1": [
+        43227,
+        59931,
+        60561
+      ],
+      "2": [
+        41297,
+        43227,
+        60561
+      ],
+      "3": [
+        41297,
+        43227,
+        59931
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 1,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7572,
+    "aggregate_mib_s": 3.962,
+    "integrity": "PASS",
+    "early_served": 1350,
+    "retries": 5,
+    "sources": {
+      "1": [
+        50977,
+        57357,
+        58029
+      ],
+      "2": [
+        44039,
+        50977,
+        57357
+      ],
+      "3": [
+        44039,
+        50977,
+        58029
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 1,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.9667,
+    "aggregate_mib_s": 15.516,
+    "integrity": "PASS",
+    "early_served": 1756,
+    "retries": 6,
+    "sources": {
+      "1": [
+        44141,
+        52449,
+        56635
+      ],
+      "2": [
+        37307,
+        52449,
+        56635
+      ],
+      "3": [
+        37307,
+        44141,
+        56635
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 1,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.3753,
+    "aggregate_mib_s": 8.888,
+    "integrity": "PASS",
+    "early_served": 18260,
+    "retries": 11,
+    "sources": {
+      "1": [
+        42657,
+        47009,
+        59811
+      ],
+      "2": [
+        46729,
+        47009,
+        59811
+      ],
+      "3": [
+        42657,
+        46729,
+        47009
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 1,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.8022,
+    "aggregate_mib_s": 12.466,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        36333
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 1,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.5964,
+    "aggregate_mib_s": 0.098,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        35021,
+        42275,
+        60475
+      ],
+      "2": [
+        35021,
+        42275
+      ],
+      "3": [
+        42275
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 1,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.0674,
+    "aggregate_mib_s": 4.684,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        43253
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 1,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5937,
+    "aggregate_mib_s": 1.684,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        42257
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 1,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4281,
+    "aggregate_mib_s": 0.023,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        41619
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 1,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4286,
+    "aggregate_mib_s": 0.023,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        57783
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 1,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.6581,
+    "aggregate_mib_s": 7.598,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        48037
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 1,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r01_n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6953,
+    "aggregate_mib_s": 0.042,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 8,
+    "sources": {
+      "1": [
+        60499
+      ],
+      "2": [
+        49139
+      ],
+      "3": [
+        49139
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 1,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4744,
+    "aggregate_mib_s": 0.021,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        33917
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 2,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.076,
+    "aggregate_mib_s": 14.451,
+    "integrity": "PASS",
+    "early_served": 1786,
+    "retries": 9,
+    "sources": {
+      "1": [
+        37509,
+        37591,
+        41713
+      ],
+      "2": [
+        37591,
+        41713,
+        42851
+      ],
+      "3": [
+        37509,
+        41713,
+        42851
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 2,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7847,
+    "aggregate_mib_s": 0.037,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 4,
+    "sources": {
+      "1": [
+        39113
+      ],
+      "2": [
+        39113,
+        39859,
+        55031
+      ],
+      "3": [
+        39113,
+        39859
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 2,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7525,
+    "aggregate_mib_s": 0.078,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 12,
+    "sources": {
+      "1": [
+        42545
+      ],
+      "2": [
+        49017
+      ],
+      "3": [
+        42545
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 2,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6936,
+    "aggregate_mib_s": 0.042,
+    "integrity": "PASS",
+    "early_served": 4,
+    "retries": 7,
+    "sources": {
+      "1": [
+        44283,
+        48159,
+        57089
+      ],
+      "2": [
+        48159,
+        57089
+      ],
+      "3": [
+        57089
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 2,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.6935,
+    "aggregate_mib_s": 7.209,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        35765
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 2,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.4239,
+    "aggregate_mib_s": 10.535,
+    "integrity": "PASS",
+    "early_served": 1373,
+    "retries": 11,
+    "sources": {
+      "1": [
+        44691,
+        47501,
+        58329
+      ],
+      "2": [
+        47501,
+        53469,
+        58329
+      ],
+      "3": [
+        44691,
+        47501,
+        53469
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 2,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.528,
+    "aggregate_mib_s": 3.272,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        45975
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 2,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5729,
+    "aggregate_mib_s": 1.746,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        47163
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 2,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 2.0369,
+    "aggregate_mib_s": 4.909,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        45535
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 2,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.8802,
+    "aggregate_mib_s": 11.362,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        33327
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 2,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 4.8744,
+    "aggregate_mib_s": 6.155,
+    "integrity": "PASS",
+    "early_served": 8200,
+    "retries": 6,
+    "sources": {
+      "1": [
+        46071,
+        48751,
+        54721
+      ],
+      "2": [
+        45915,
+        46071,
+        48751
+      ],
+      "3": [
+        45915,
+        48751,
+        54721
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 2,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.2829,
+    "aggregate_mib_s": 6.571,
+    "integrity": "PASS",
+    "early_served": 6511,
+    "retries": 12,
+    "sources": {
+      "1": [
+        36115,
+        38127,
+        54631
+      ],
+      "2": [
+        36115,
+        38127,
+        45459
+      ],
+      "3": [
+        38127,
+        45459,
+        54631
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 2,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7733,
+    "aggregate_mib_s": 3.879,
+    "integrity": "PASS",
+    "early_served": 833,
+    "retries": 3,
+    "sources": {
+      "1": [
+        48529,
+        48789,
+        49051
+      ],
+      "2": [
+        48789,
+        49051,
+        51591
+      ],
+      "3": [
+        48529,
+        49051,
+        51591
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 2,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4097,
+    "aggregate_mib_s": 0.048,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        59315
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 2,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4754,
+    "aggregate_mib_s": 0.041,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        41931
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 2,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 11.3061,
+    "aggregate_mib_s": 5.307,
+    "integrity": "PASS",
+    "early_served": 15959,
+    "retries": 12,
+    "sources": {
+      "1": [
+        47471,
+        58451,
+        58809
+      ],
+      "2": [
+        42313,
+        47471,
+        58451
+      ],
+      "3": [
+        42313,
+        47471,
+        58809
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 2,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.2537,
+    "aggregate_mib_s": 15.953,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        52791
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 2,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5726,
+    "aggregate_mib_s": 1.746,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        58165
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 2,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 3.7553,
+    "aggregate_mib_s": 5.326,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        51367
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 2,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.412,
+    "aggregate_mib_s": 17.585,
+    "integrity": "PASS",
+    "early_served": 7440,
+    "retries": 11,
+    "sources": {
+      "1": [
+        34949,
+        39673,
+        45263
+      ],
+      "2": [
+        39673,
+        45263,
+        48135
+      ],
+      "3": [
+        34949,
+        39673,
+        48135
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 2,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4329,
+    "aggregate_mib_s": 0.023,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        55453
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 2,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.8046,
+    "aggregate_mib_s": 0.073,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 4,
+    "sources": {
+      "1": [
+        38975,
+        47163,
+        51637
+      ],
+      "2": [
+        38975
+      ],
+      "3": [
+        38975,
+        51637
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 2,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r02_n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.8851,
+    "aggregate_mib_s": 3.389,
+    "integrity": "PASS",
+    "early_served": 339,
+    "retries": 12,
+    "sources": {
+      "1": [
+        36813,
+        46639,
+        52341
+      ],
+      "2": [
+        52341,
+        55707
+      ],
+      "3": [
+        36813,
+        52341,
+        55707
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 2,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.8006,
+    "aggregate_mib_s": 12.49,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        33217
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 3,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6028,
+    "aggregate_mib_s": 0.049,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 6,
+    "sources": {
+      "1": [
+        33169
+      ],
+      "2": [
+        53713
+      ],
+      "3": [
+        33169,
+        51123
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 3,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.3395,
+    "aggregate_mib_s": 3.733,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        60921
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 3,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.495,
+    "aggregate_mib_s": 0.02,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        40833
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 3,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.433,
+    "aggregate_mib_s": 0.023,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        54811
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 3,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7481,
+    "aggregate_mib_s": 0.039,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 8,
+    "sources": {
+      "1": [
+        49293,
+        60707
+      ],
+      "2": [
+        57515
+      ],
+      "3": [
+        57515
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 3,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.6532,
+    "aggregate_mib_s": 7.654,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        42565
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 3,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.9053,
+    "aggregate_mib_s": 3.314,
+    "integrity": "PASS",
+    "early_served": 1559,
+    "retries": 9,
+    "sources": {
+      "1": [
+        40665,
+        44579,
+        53863
+      ],
+      "2": [
+        38029,
+        40665,
+        44579
+      ],
+      "3": [
+        38029,
+        44579,
+        53863
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 3,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5498,
+    "aggregate_mib_s": 1.819,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        50329
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 3,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7057,
+    "aggregate_mib_s": 0.083,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 8,
+    "sources": {
+      "1": [
+        41021,
+        42231
+      ],
+      "2": [
+        42231
+      ],
+      "3": [
+        41021,
+        42231
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 3,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4466,
+    "aggregate_mib_s": 0.044,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        43541
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 3,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.612,
+    "aggregate_mib_s": 1.634,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        59285
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 3,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6256,
+    "aggregate_mib_s": 4.795,
+    "integrity": "PASS",
+    "early_served": 81,
+    "retries": 5,
+    "sources": {
+      "1": [
+        37861
+      ],
+      "2": [
+        34323,
+        35319,
+        37861
+      ],
+      "3": [
+        35319,
+        37861,
+        60589
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 3,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.5736,
+    "aggregate_mib_s": 19.065,
+    "integrity": "PASS",
+    "early_served": 2434,
+    "retries": 6,
+    "sources": {
+      "1": [
+        32915,
+        35117,
+        49941
+      ],
+      "2": [
+        32915,
+        49941,
+        53663
+      ],
+      "3": [
+        35117,
+        49941,
+        53663
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 3,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 8.5974,
+    "aggregate_mib_s": 6.979,
+    "integrity": "PASS",
+    "early_served": 29600,
+    "retries": 7,
+    "sources": {
+      "1": [
+        47109,
+        56863,
+        59277
+      ],
+      "2": [
+        47109,
+        50513,
+        59277
+      ],
+      "3": [
+        47109,
+        50513,
+        56863
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 3,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4352,
+    "aggregate_mib_s": 0.045,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        51021
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 3,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 6.2037,
+    "aggregate_mib_s": 4.836,
+    "integrity": "PASS",
+    "early_served": 14286,
+    "retries": 14,
+    "sources": {
+      "1": [
+        39073,
+        49265,
+        51457
+      ],
+      "2": [
+        49265,
+        51457,
+        55707
+      ],
+      "3": [
+        39073,
+        51457,
+        55707
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 3,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 2.0016,
+    "aggregate_mib_s": 4.996,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        43599
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 3,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.4382,
+    "aggregate_mib_s": 6.152,
+    "integrity": "PASS",
+    "early_served": 7171,
+    "retries": 10,
+    "sources": {
+      "1": [
+        36037,
+        42657,
+        54263
+      ],
+      "2": [
+        39661,
+        42657,
+        54263
+      ],
+      "3": [
+        36037,
+        39661,
+        42657
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 3,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 3.3614,
+    "aggregate_mib_s": 5.95,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        44413
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 3,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7484,
+    "aggregate_mib_s": 0.078,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 5,
+    "sources": {
+      "1": [
+        32855,
+        37639,
+        49773
+      ],
+      "2": [
+        37639,
+        49773
+      ],
+      "3": [
+        37639
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 3,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.2384,
+    "aggregate_mib_s": 16.149,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        52953
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 3,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.0205,
+    "aggregate_mib_s": 14.699,
+    "integrity": "PASS",
+    "early_served": 2293,
+    "retries": 9,
+    "sources": {
+      "1": [
+        46533,
+        47097,
+        48273
+      ],
+      "2": [
+        37255,
+        46533,
+        47097
+      ],
+      "3": [
+        37255,
+        47097,
+        48273
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 3,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r03_n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.2178,
+    "aggregate_mib_s": 18.646,
+    "integrity": "PASS",
+    "early_served": 7944,
+    "retries": 8,
+    "sources": {
+      "1": [
+        34045,
+        41931,
+        49397
+      ],
+      "2": [
+        34045,
+        49397,
+        56901
+      ],
+      "3": [
+        34045,
+        41931,
+        56901
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 3,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6463,
+    "aggregate_mib_s": 0.091,
+    "integrity": "PASS",
+    "early_served": 3,
+    "retries": 6,
+    "sources": {
+      "1": [
+        41977
+      ],
+      "2": [
+        41977,
+        48155,
+        51681
+      ],
+      "3": [
+        41977,
+        48155
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 4,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6859,
+    "aggregate_mib_s": 0.085,
+    "integrity": "PASS",
+    "early_served": 16,
+    "retries": 8,
+    "sources": {
+      "1": [
+        51463
+      ],
+      "2": [
+        45827,
+        51463
+      ],
+      "3": [
+        49853
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 4,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.9055,
+    "aggregate_mib_s": 7.681,
+    "integrity": "PASS",
+    "early_served": 16590,
+    "retries": 11,
+    "sources": {
+      "1": [
+        42477,
+        46121,
+        51305
+      ],
+      "2": [
+        46121,
+        50815,
+        51305
+      ],
+      "3": [
+        42477,
+        50815,
+        51305
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 4,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7248,
+    "aggregate_mib_s": 0.04,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        39479,
+        50133,
+        59227
+      ],
+      "2": [
+        50133
+      ],
+      "3": [
+        50133,
+        59227
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 4,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.7991,
+    "aggregate_mib_s": 12.515,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        56791
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 4,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4704,
+    "aggregate_mib_s": 2.126,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        37869
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 4,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.5723,
+    "aggregate_mib_s": 1.747,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        53867
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 4,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.5219,
+    "aggregate_mib_s": 19.713,
+    "integrity": "PASS",
+    "early_served": 3178,
+    "retries": 5,
+    "sources": {
+      "1": [
+        34305,
+        34417,
+        38531
+      ],
+      "2": [
+        34305,
+        34417,
+        44281
+      ],
+      "3": [
+        34305,
+        38531,
+        44281
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 4,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.3051,
+    "aggregate_mib_s": 0.064,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        52149
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 4,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6307,
+    "aggregate_mib_s": 0.046,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 6,
+    "sources": {
+      "1": [
+        50521
+      ],
+      "2": [
+        50521
+      ],
+      "3": [
+        33125,
+        60999
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 4,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4077,
+    "aggregate_mib_s": 0.048,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        52823
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 4,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.1876,
+    "aggregate_mib_s": 27.428,
+    "integrity": "PASS",
+    "early_served": 9322,
+    "retries": 6,
+    "sources": {
+      "1": [
+        36203,
+        43397,
+        59511
+      ],
+      "2": [
+        34627,
+        43397,
+        59511
+      ],
+      "3": [
+        34627,
+        36203,
+        59511
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 4,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 7.4895,
+    "aggregate_mib_s": 8.011,
+    "integrity": "PASS",
+    "early_served": 32865,
+    "retries": 8,
+    "sources": {
+      "1": [
+        33771,
+        37073,
+        46901
+      ],
+      "2": [
+        33771,
+        46901,
+        52131
+      ],
+      "3": [
+        33771,
+        37073,
+        52131
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 4,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.3277,
+    "aggregate_mib_s": 0.03,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        48935
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 4,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 4.616,
+    "aggregate_mib_s": 4.333,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        49211
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 4,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.5704,
+    "aggregate_mib_s": 12.736,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        34827
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 4,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.1263,
+    "aggregate_mib_s": 7.055,
+    "integrity": "PASS",
+    "early_served": 7970,
+    "retries": 8,
+    "sources": {
+      "1": [
+        41985,
+        44005,
+        49851
+      ],
+      "2": [
+        44005,
+        49851,
+        56459
+      ],
+      "3": [
+        41985,
+        44005,
+        56459
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 4,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.8191,
+    "aggregate_mib_s": 6.104,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        35567
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 4,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.9627,
+    "aggregate_mib_s": 15.581,
+    "integrity": "PASS",
+    "early_served": 507,
+    "retries": 6,
+    "sources": {
+      "1": [
+        38887,
+        41305,
+        44623
+      ],
+      "2": [
+        38887,
+        44623,
+        48947
+      ],
+      "3": [
+        41305,
+        44623,
+        48947
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 4,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4683,
+    "aggregate_mib_s": 0.021,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        55597
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 4,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 2.0697,
+    "aggregate_mib_s": 4.832,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        41981
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 4,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.611,
+    "aggregate_mib_s": 4.91,
+    "integrity": "PASS",
+    "early_served": 270,
+    "retries": 4,
+    "sources": {
+      "1": [
+        35821,
+        38353,
+        58291
+      ],
+      "2": [
+        38353,
+        39173,
+        58291
+      ],
+      "3": [
+        58291
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 4,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.1688,
+    "aggregate_mib_s": 4.278,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        34387
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 4,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r04_n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.9777,
+    "aggregate_mib_s": 3.068,
+    "integrity": "PASS",
+    "early_served": 941,
+    "retries": 4,
+    "sources": {
+      "1": [
+        43591,
+        54693,
+        55539
+      ],
+      "2": [
+        43591,
+        51333,
+        55539
+      ],
+      "3": [
+        43591,
+        51333,
+        54693
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 4,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 2.229,
+    "aggregate_mib_s": 26.918,
+    "integrity": "PASS",
+    "early_served": 9416,
+    "retries": 7,
+    "sources": {
+      "1": [
+        47433,
+        59083,
+        59597
+      ],
+      "2": [
+        40649,
+        59083,
+        59597
+      ],
+      "3": [
+        40649,
+        47433,
+        59597
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 5,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 3.4809,
+    "aggregate_mib_s": 4.309,
+    "integrity": "PASS",
+    "early_served": 4552,
+    "retries": 6,
+    "sources": {
+      "1": [
+        38121,
+        55765,
+        59943
+      ],
+      "2": [
+        38121,
+        45303,
+        59943
+      ],
+      "3": [
+        38121,
+        45303,
+        55765
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 5,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 5.0326,
+    "aggregate_mib_s": 5.961,
+    "integrity": "PASS",
+    "early_served": 18672,
+    "retries": 12,
+    "sources": {
+      "1": [
+        41021,
+        47501,
+        51289
+      ],
+      "2": [
+        34643,
+        47501,
+        51289
+      ],
+      "3": [
+        34643,
+        41021,
+        51289
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 5,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.5231,
+    "aggregate_mib_s": 13.131,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        41407
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 5,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 3.3776,
+    "aggregate_mib_s": 5.921,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 2,
+    "sources": {
+      "1": [
+        52205
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 5,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.7605,
+    "aggregate_mib_s": 3.945,
+    "integrity": "PASS",
+    "early_served": 1474,
+    "retries": 3,
+    "sources": {
+      "1": [
+        44829,
+        50019,
+        59115
+      ],
+      "2": [
+        33083,
+        44829,
+        50019
+      ],
+      "3": [
+        33083,
+        50019,
+        59115
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 5,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4064,
+    "aggregate_mib_s": 0.024,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        50167
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 5,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.2763,
+    "aggregate_mib_s": 3.917,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        32877
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 5,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6467,
+    "aggregate_mib_s": 0.045,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        51317,
+        54979
+      ],
+      "2": [
+        51317,
+        54233,
+        54979
+      ],
+      "3": [
+        51317
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 5,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.3315,
+    "aggregate_mib_s": 0.029,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        44575
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 5,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.4652,
+    "aggregate_mib_s": 20.475,
+    "integrity": "PASS",
+    "early_served": 2881,
+    "retries": 7,
+    "sources": {
+      "1": [
+        37705,
+        51827,
+        56461
+      ],
+      "2": [
+        37705,
+        43201,
+        56461
+      ],
+      "3": [
+        37705,
+        43201,
+        51827
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 5,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s10240",
+    "size_bytes": 10240,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6823,
+    "aggregate_mib_s": 0.043,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 6,
+    "sources": {
+      "1": [
+        60563
+      ],
+      "2": [
+        60563
+      ],
+      "3": [
+        45949,
+        55795
+      ]
+    },
+    "sha256": "7b2df30db1a6feb61387f20558dd56176bc23db2aced41bdd7a68a9241378ce9",
+    "repetition": 5,
+    "input_seed": 12266,
+    "metadata_path": "resultados/entradas/seed2026_s10240_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 1.7291,
+    "aggregate_mib_s": 5.783,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        45847
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 5,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4072,
+    "aggregate_mib_s": 0.048,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        48563
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 5,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 1.0359,
+    "aggregate_mib_s": 14.48,
+    "integrity": "PASS",
+    "early_served": 1937,
+    "retries": 4,
+    "sources": {
+      "1": [
+        34971,
+        52357,
+        58185
+      ],
+      "2": [
+        34971,
+        41735,
+        58185
+      ],
+      "3": [
+        41735,
+        52357,
+        58185
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 5,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6192,
+    "aggregate_mib_s": 0.095,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 3,
+    "sources": {
+      "1": [
+        50255,
+        59879
+      ],
+      "2": [
+        50255
+      ],
+      "3": [
+        44153,
+        50255,
+        59879
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 5,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4269,
+    "aggregate_mib_s": 0.046,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        54563
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 5,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s10485760",
+    "size_bytes": 10485760,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.7824,
+    "aggregate_mib_s": 12.78,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        39661
+      ]
+    },
+    "sha256": "ff24a8f8e98c76027fabd886208a62bc32ebbd0b911754bd59c59d3da26bd9cd",
+    "repetition": 5,
+    "input_seed": 10487786,
+    "metadata_path": "resultados/entradas/seed2026_s10485760_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s5242880",
+    "size_bytes": 5242880,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.7883,
+    "aggregate_mib_s": 6.343,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 1,
+    "sources": {
+      "1": [
+        47943
+      ]
+    },
+    "sha256": "a1fc0541bcd6b6d9a59ae9de941c18d42023a24c049067af8329770727ffc875",
+    "repetition": 5,
+    "input_seed": 5244906,
+    "metadata_path": "resultados/entradas/seed2026_s5242880_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b1024_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 1024,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.4701,
+    "aggregate_mib_s": 2.127,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        42591
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 5,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6974,
+    "aggregate_mib_s": 4.301,
+    "integrity": "PASS",
+    "early_served": 357,
+    "retries": 8,
+    "sources": {
+      "1": [
+        44765,
+        51145,
+        57063
+      ],
+      "2": [
+        44765,
+        47599,
+        57063
+      ],
+      "3": [
+        57063
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 5,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n2_b4096_s1048576",
+    "size_bytes": 1048576,
+    "block_bytes": 4096,
+    "peers": 2,
+    "topology": "mesh",
+    "seconds": 0.3473,
+    "aggregate_mib_s": 2.879,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 0,
+    "sources": {
+      "1": [
+        42841
+      ]
+    },
+    "sha256": "046998acaa4a13b94d9ad41666c410cd54c698ad291274954868bcecc9430fd7",
+    "repetition": 5,
+    "input_seed": 1050602,
+    "metadata_path": "resultados/entradas/seed2026_s1048576_b4096.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s20480",
+    "size_bytes": 20480,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 0.6001,
+    "aggregate_mib_s": 0.098,
+    "integrity": "PASS",
+    "early_served": 0,
+    "retries": 6,
+    "sources": {
+      "1": [
+        33115
+      ],
+      "2": [
+        33115,
+        51087
+      ],
+      "3": [
+        41479
+      ]
+    },
+    "sha256": "cbdf50d62738f6dffbc34c8fd86d4cc71928537ebc4a6abc336c67a54d0344b8",
+    "repetition": 5,
+    "input_seed": 22506,
+    "metadata_path": "resultados/entradas/seed2026_s20480_b1024.json"
+  },
+  {
+    "case": "medicoes/seed2026_r05_n4_b1024_s20971520",
+    "size_bytes": 20971520,
+    "block_bytes": 1024,
+    "peers": 4,
+    "topology": "mesh",
+    "seconds": 9.3938,
+    "aggregate_mib_s": 6.387,
+    "integrity": "PASS",
+    "early_served": 31070,
+    "retries": 10,
+    "sources": {
+      "1": [
+        40759,
+        47943,
+        54239
+      ],
+      "2": [
+        47943,
+        50441,
+        54239
+      ],
+      "3": [
+        40759,
+        50441,
+        54239
+      ]
+    },
+    "sha256": "3c27a23ac341a611cf0c00fd6fad8a7eede7f1009b02ac3c47c008707325145a",
+    "repetition": 5,
+    "input_seed": 20973546,
+    "metadata_path": "resultados/entradas/seed2026_s20971520_b1024.json"
+  }
+]

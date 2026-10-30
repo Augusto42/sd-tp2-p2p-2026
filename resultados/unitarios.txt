@@ -11,6 +11,6 @@ test_truncated_frame (test_peer.Frames.test_truncated_frame) ... ok
 test_completed_leecher_still_contacts_neighbor (test_peer.Neighbors.test_completed_leecher_still_contacts_neighbor) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.026s
+Ran 11 tests in 0.017s
 
 OK

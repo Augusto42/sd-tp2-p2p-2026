@@ -1,9 +1,13 @@
 {
   "python": "3.13.5 (main, Jun 13 2026, 14:18:01) [GCC 14.2.0]",
   "platform": "Linux-6.12.94+deb13-amd64-x86_64-with-glibc2.41",
-  "cpu_count": 4,
-  "date": "2026-10-30",
-  "network": "loopback TCP, processos independentes",
-  "repetitions": 1,
-  "units": "KB/MB do enunciado interpretados como KiB/MiB"
+  "date": "2026-10-30T07:56:44.096826-03:00",
+  "network": "TCP loopback, processos independentes",
+  "repetitions": 5,
+  "random_seed": 2026,
+  "order": "embaralhada por repetição com seed + repetição",
+  "input": "bytes pseudoaleatórios replicáveis; seed + tamanho; mesmos bytes por tamanho em todas as repetições",
+  "units": "KB/MB interpretados como KiB/MiB",
+  "deviation": "desvio-padrão amostral, denominador n - 1",
+  "timing": "inicialização até arquivos completos e conexão de cada leecher a todos os vizinhos; inclui logs"
 }

@@ -1,0 +1,458 @@
+[
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 10240,
+    "repetitions": 5,
+    "mean_seconds": 0.44614,
+    "std_seconds": 0.03520785423737153,
+    "min_seconds": 0.4064,
+    "max_seconds": 0.495,
+    "seconds": [
+      0.4281,
+      0.4329,
+      0.495,
+      0.4683,
+      0.4064
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 10240,
+    "repetitions": 5,
+    "mean_seconds": 0.66266,
+    "std_seconds": 0.0715767629891154,
+    "min_seconds": 0.5586,
+    "max_seconds": 0.7481,
+    "seconds": [
+      0.5586,
+      0.6936,
+      0.7481,
+      0.6307,
+      0.6823
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 10240,
+    "repetitions": 5,
+    "mean_seconds": 0.39904,
+    "std_seconds": 0.06587346203138256,
+    "min_seconds": 0.3277,
+    "max_seconds": 0.4744,
+    "seconds": [
+      0.4286,
+      0.4744,
+      0.433,
+      0.3277,
+      0.3315
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 10240,
+    "repetitions": 5,
+    "mean_seconds": 0.69086,
+    "std_seconds": 0.07014672479881008,
+    "min_seconds": 0.6028,
+    "max_seconds": 0.7847,
+    "seconds": [
+      0.6953,
+      0.7847,
+      0.6028,
+      0.7248,
+      0.6467
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 20480,
+    "repetitions": 5,
+    "mean_seconds": 0.39328,
+    "std_seconds": 0.04985485934189365,
+    "min_seconds": 0.3066,
+    "max_seconds": 0.4352,
+    "seconds": [
+      0.3066,
+      0.4097,
+      0.4352,
+      0.4077,
+      0.4072
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 20480,
+    "repetitions": 5,
+    "mean_seconds": 0.68708,
+    "std_seconds": 0.09132478852973051,
+    "min_seconds": 0.5964,
+    "max_seconds": 0.8046,
+    "seconds": [
+      0.5964,
+      0.8046,
+      0.7484,
+      0.6859,
+      0.6001
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 20480,
+    "repetitions": 5,
+    "mean_seconds": 0.41744,
+    "std_seconds": 0.06551299871017965,
+    "min_seconds": 0.3051,
+    "max_seconds": 0.4754,
+    "seconds": [
+      0.4332,
+      0.4754,
+      0.4466,
+      0.3051,
+      0.4269
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 20480,
+    "repetitions": 5,
+    "mean_seconds": 0.6637,
+    "std_seconds": 0.06457487901653397,
+    "min_seconds": 0.5948,
+    "max_seconds": 0.7525,
+    "seconds": [
+      0.5948,
+      0.7525,
+      0.7057,
+      0.6463,
+      0.6192
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 1048576,
+    "repetitions": 5,
+    "mean_seconds": 0.55974,
+    "std_seconds": 0.05299200883152099,
+    "min_seconds": 0.4701,
+    "max_seconds": 0.612,
+    "seconds": [
+      0.5717,
+      0.5726,
+      0.612,
+      0.5723,
+      0.4701
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 1048576,
+    "repetitions": 5,
+    "mean_seconds": 0.8348,
+    "std_seconds": 0.10088998959262512,
+    "min_seconds": 0.7572,
+    "max_seconds": 0.9777,
+    "seconds": [
+      0.7572,
+      0.7733,
+      0.9053,
+      0.9777,
+      0.7605
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 1048576,
+    "repetitions": 5,
+    "mean_seconds": 0.5068199999999999,
+    "std_seconds": 0.10066656346573076,
+    "min_seconds": 0.3473,
+    "max_seconds": 0.5937,
+    "seconds": [
+      0.5937,
+      0.5729,
+      0.5498,
+      0.4704,
+      0.3473
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 1048576,
+    "repetitions": 5,
+    "mean_seconds": 0.6855,
+    "std_seconds": 0.11732906715729055,
+    "min_seconds": 0.6084,
+    "max_seconds": 0.8851,
+    "seconds": [
+      0.6084,
+      0.8851,
+      0.6256,
+      0.611,
+      0.6974
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 5242880,
+    "repetitions": 5,
+    "mean_seconds": 1.276,
+    "std_seconds": 0.17503009741184516,
+    "min_seconds": 1.0674,
+    "max_seconds": 1.528,
+    "seconds": [
+      1.0674,
+      1.528,
+      1.3395,
+      1.1688,
+      1.2763
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 5242880,
+    "repetitions": 5,
+    "mean_seconds": 2.48692,
+    "std_seconds": 0.5716013488437549,
+    "min_seconds": 2.1063,
+    "max_seconds": 3.4809,
+    "seconds": [
+      2.1063,
+      2.2829,
+      2.4382,
+      2.1263,
+      3.4809
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 5242880,
+    "repetitions": 5,
+    "mean_seconds": 0.72244,
+    "std_seconds": 0.07657028144130072,
+    "min_seconds": 0.6532,
+    "max_seconds": 0.8191,
+    "seconds": [
+      0.6581,
+      0.6935,
+      0.6532,
+      0.8191,
+      0.7883
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 5242880,
+    "repetitions": 5,
+    "mean_seconds": 1.08194,
+    "std_seconds": 0.19386182708310573,
+    "min_seconds": 0.9627,
+    "max_seconds": 1.4239,
+    "seconds": [
+      0.9667,
+      1.4239,
+      1.0205,
+      0.9627,
+      1.0359
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 10485760,
+    "repetitions": 5,
+    "mean_seconds": 1.9638,
+    "std_seconds": 0.13545456802928427,
+    "min_seconds": 1.7291,
+    "max_seconds": 2.0697,
+    "seconds": [
+      1.9817,
+      2.0369,
+      2.0016,
+      2.0697,
+      1.7291
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 10485760,
+    "repetitions": 5,
+    "mean_seconds": 4.6783,
+    "std_seconds": 1.0938301627766536,
+    "min_seconds": 3.3753,
+    "max_seconds": 6.2037,
+    "seconds": [
+      3.3753,
+      4.8744,
+      6.2037,
+      3.9055,
+      5.0326
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 10485760,
+    "repetitions": 5,
+    "mean_seconds": 0.8129,
+    "std_seconds": 0.03845698896169589,
+    "min_seconds": 0.7824,
+    "max_seconds": 0.8802,
+    "seconds": [
+      0.8022,
+      0.8802,
+      0.8006,
+      0.7991,
+      0.7824
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 10485760,
+    "repetitions": 5,
+    "mean_seconds": 1.6028,
+    "std_seconds": 0.27436276168605683,
+    "min_seconds": 1.3773,
+    "max_seconds": 2.076,
+    "seconds": [
+      1.3773,
+      2.076,
+      1.5736,
+      1.5219,
+      1.4652
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 1024,
+    "size_bytes": 20971520,
+    "repetitions": 5,
+    "mean_seconds": 4.05026,
+    "std_seconds": 0.7943199091046377,
+    "min_seconds": 3.3614,
+    "max_seconds": 5.141,
+    "seconds": [
+      5.141,
+      3.7553,
+      3.3614,
+      4.616,
+      3.3776
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 1024,
+    "size_bytes": 20971520,
+    "repetitions": 5,
+    "mean_seconds": 9.61766,
+    "std_seconds": 1.6812387941633995,
+    "min_seconds": 7.4895,
+    "max_seconds": 11.3061,
+    "seconds": [
+      11.3015,
+      11.3061,
+      8.5974,
+      7.4895,
+      9.3938
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 2,
+    "block_bytes": 4096,
+    "size_bytes": 20971520,
+    "repetitions": 5,
+    "mean_seconds": 1.343,
+    "std_seconds": 0.19280001296680455,
+    "min_seconds": 1.1294,
+    "max_seconds": 1.5704,
+    "seconds": [
+      1.1294,
+      1.2537,
+      1.2384,
+      1.5704,
+      1.5231
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  },
+  {
+    "peers": 4,
+    "block_bytes": 4096,
+    "size_bytes": 20971520,
+    "repetitions": 5,
+    "mean_seconds": 2.6962,
+    "std_seconds": 0.5765892298681965,
+    "min_seconds": 2.1876,
+    "max_seconds": 3.412,
+    "seconds": [
+      2.4346,
+      3.412,
+      3.2178,
+      2.1876,
+      2.229
+    ],
+    "integrity": "PASS",
+    "topology": "mesh"
+  }
+]

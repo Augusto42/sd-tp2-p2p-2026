@@ -1,0 +1,9 @@
+{
+  "matrix_cases": 120,
+  "configurations": 24,
+  "repetitions": 5,
+  "additional_cases": 10,
+  "integration_total": 130,
+  "unit_tests": 11,
+  "result": "PASS"
+}
